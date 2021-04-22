@@ -246,7 +246,7 @@ ar<%= "-#{@tenant_name}" %>:
   cancel: Cancel
   added: تم اضافة
   removed: تم حذف
-  select: Selevy
+  select: Select
   from: From
   to: To
   in: In
@@ -801,71 +801,71 @@ ar<%= "-#{@tenant_name}" %>:
         id: الرقم
         usage_count: مستخدمي الكوبون
       course:
-        availability_type: "عدد المشتركين و مكان توافر الدورة"
+        availability_type: "Course Availability and Seats Limit"
         availability_types:
-          online: اونلاين
-          offline: في المقر
-          both_online_and_offline: كلاهما
+          online: Online
+          offline: On Campus
+          both_online_and_offline: Both
         id: الرقم
-        image: "صورة الغلاف"
-        category: "فئة"
-        organization: ال<%=@organization_ar_locale%>
-        title: "اسم ال<%=@course_ar_locale%>"
-        english_title: 'اسم ال<%=@course_ar_locale%> باللغة الانجليزية'
-        status: الحالة
-        course_name: "الاسم المستخدم فى الرابط"
-        summary: "نبذة عن ال<%=@course_ar_locale%>"
-        start_at: "بداية ال<%=@course_ar_locale%>"
-        end_at: "نهاية ال<%=@course_ar_locale%>"
-        updated_at: تاريخ التعديل
-        created_at: تاريخ البدء
-        published_at: تاريخ النشر
-        published: "للنشر"
-        external_video_url: ادخل الرابط
-        video_type: مصدر الفيديو
+        image: "Cover Image"
+        category: "Category"
+        organization: The <%=@organization_ar_locale%>
+        title: "Title of <%=@course_ar_locale%>"
+        english_title: 'Title of <%=@course_ar_locale%> in English'
+        status: Status
+        course_name: "Course Name Used in The URL"
+        summary: "Summary About The <%=@course_ar_locale%>"
+        start_at: "<%=@course_ar_locale%> Start Date"
+        end_at: "<%=@course_ar_locale%> End Date"
+        updated_at: Updated at
+        created_at: Created at
+        published_at: Published at
+        published: "Published"
+        external_video_url: Add the video url
+        video_type: Video Source
         video_types:
-          upload: رفع ملف
-          youtube: رابط يوتيوب
-        video: يوتيوب فيديو
-        prerequisites: المتطلبات
-        faqs: سؤال و جواب
-        curriculum: المنهج
-        welcome_message: الرسالة الترحيبية
-        homepage_image: الصورة الرئيسية
-        subtitle: "عنوان فرعي"
-        homepage_summary: "وصف ال<%=@course_ar_locale%>"
-        english_name : "الاسم المستخدم فى الرابط"
-        certificated: "شهادة الإكمال "
-        attendance_certificated: "شهادة الحضور "
-        minimum_success_percentage: "نسبة النجاح"
-        certificate_language: لغة إصدار الشهادة
-        total_assignments_weight: "المجموع الكلي للنسب"
-        certificate_content: محتوى الشهادة
-        price: "السعر المحدد لل<%=@course_ar_locale%>"
-        paid: "نوع ال<%=@course_ar_locale%>:"
+          upload: Upload video file
+          youtube: Embed a Youtube link
+        video: Youtbe video
+        prerequisites: Pre-requisites
+        faqs: Question and Answer
+        curriculum: Curriculum
+        welcome_message: The Welcome Message
+        homepage_image: The Header Image
+        subtitle: "Subtitle"
+        homepage_summary: "The <%=@course_ar_locale%> Description"
+        english_name : "The course name used in the url"
+        certificated: "Completion Certificate"
+        attendance_certificated: " Attendance Certificate "
+        minimum_success_percentage: " Passing Score"
+        certificate_language: Generate Certificate in Language:
+        total_assignments_weight: "The Total of Weighted Grades"
+        certificate_content:  The certificate content
+        price: "<%=@course_ar_locale%>' Price"
+        paid: "<%=@course_ar_locale%> is Free/Paid:"
         coupon_allowed: "مسموح فقط باستخدام الكوبون"
-        isSequential: يجب إكمال جميع المحتويات بالترتيب
-        is_diagram: إظهار رسم بياني لأقسام ال<%=@course_ar_locale%>
-        public: إظهار ال<%=@course_ar_locale%> للجميع
-        maximum_group_size: عدد مشتركي الاونلاين
-        offline_maximum_group_size: عدد مشتركي المقر
+        isSequential: The course content shall be sequentially navigated
+        is_diagram: <%=@course_ar_locale%> Sections Diagram
+        public: Public <%=@course_ar_locale%> 
+        maximum_group_size: Online Seats Limit
+        offline_maximum_group_size: On-Campus Seats Limit
         continuous_course: <%=@course_ar_locale%> مستمرة
         continuous: <%=@course_ar_locale%> مستمرة
         require_attendance: لا تعطى الشهادة إلا بعد إكمال جميع المحتويات
-        signed_in:  متاح لجميع أعضاء المنصة
+        signed_in:  Public, Can be accessed by all users
         for_public: متاح حتى بدون تسجيل الدخول
-        departments: متاح فقط للأعضاء المدعوين
+        departments: Restricted, Can be accessed by invited users only
         coupon: متاح باستخدام كوبون
-        enrollment_type: طريقة الالتحاق
-        physical_attendance: حضور الطلاب
-        empty_msg: لا يوجد نتائج للبحث الذي قمت به في الوقت الحالي .. انتظر المزيد من المواد قريبا على <%= SiteConfig.site_name %>
+        enrollment_type: Enrollment
+        physical_attendance: Students Attendance
+        empty_msg: No results found. More to be foun soon on <%= SiteConfig.site_name %>
       program:
         id: الرقم
         organization: ال<%=@organization_ar_locale%>
-        image: "صورة الغلاف"
-        category: "فئة"
-        title: "اسم البرنامج"
-        summary: نبذة عن البرنامج
+        image: "Cover Image"
+        category: "Category"
+        title: "Template Title"
+        summary: Summary the Template
         video: يوتيوب فيديو
         welcome_message: الرسالة الترحيبية
         homepage_image: الصورة الرئيسية
