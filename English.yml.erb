@@ -1026,10 +1026,10 @@ ar<%= "-#{@tenant_name}" %>:
         description: Description
         published_at: Published at
         updated_at: Updated at
-        created_at: تاريخ البدء
+        created_at: Created at
         published: Published
-        logo_processing: معالجة اللوجو
-        image_processing: معالجة الغلاف
+        logo_processing: The logo is under processing
+        image_processing: The cover image is under processing
         paid_courses_authorized: السماح بإنشاء <%=@course_ar_locale_pluralized%> مدفوعة
         visa_payment: السماح بالدفع بالكروت لحساب باي فورت
         sadad_payment: السماح بالدفع بإستخدام سداد
@@ -1056,18 +1056,18 @@ ar<%= "-#{@tenant_name}" %>:
       comment:
         <<: *comment_attr
       attendance_day:
-        day: التاريخ
+        day: Date
       choice:
-        content: الإجابة
-        explanation: شرح الإجابة
-        correct: تحديد كإجابة صحيحة
+        content: Answer
+        explanation: Explanation
+        correct: Mark as correct answer
       membership:
-        invited_email: البريد الإلكتروني
-        role: الدور
+        invited_email: e-Mail
+        role: Role
       message:
-        subject: عنوان الرسالة
-        body: نص الرسالة
-        recipients: المرسل إليهم
+        subject: Message Title
+        body: Message Body
+        recipients: Recipients
       site_color:
         id: الرقم
         primary: الرئيسى
@@ -1076,49 +1076,49 @@ ar<%= "-#{@tenant_name}" %>:
         text: الخط
         background: الخلفية
       payment:
-        id: الرقم
-        provider: مزود الخدمة
-        status: الحالة
-        amount: المدفوع
-        currency: العملة
-        payment_method: طريقة الدفع
-        course: ال<%=@course_ar_locale%>
-        user: المستخدم
-        email: البريد الالكتروني
-        mobile_number: رقم الهاتف
-        slug: سلج
-        organization_name: اسم ال<%=@organization_ar_locale%>
-        availability_type: مكان الحضور
-        payable: المنتج
-        created_at: تاريخ الانشاء
-        updated_at: تاريخ التعديل
-        status_changed_at: تاريخ ووقت تعديل الحالة
+        id: Identification Number
+        provider: Payment Gateway
+        status: Status
+        amount: Amount to be Paid
+        currency: Currency
+        payment_method: Payment Methods
+        course: <%=@course_ar_locale%>
+        user: User
+        email: e-Mail
+        mobile_number: Mobile Number
+        slug: The short name in the url
+        organization_name: <%=@organization_ar_locale%> Name
+        availability_type: Course Availability
+        payable: Item
+        created_at: Created at
+        updated_at: Updated at
+        status_changed_at: Status is changed at
       bank_info:
-        id: الرقم
-        bank_name: اسم البنك
-        account_no: رقم الحساب
-        created_at: تاريخ الانشاء
-        updated_at: تاريخ التعديل
+        id: Identification Number
+        bank_name: Bank Name
+        account_no: Account Number
+        created_at: Created at
+        updated_at: Updated At
       bank_transfer_payment:
-        transaction_code: رقم العملية
-        transaction_date: تاريخ العملية
-        payer_name: اسم العميل
-        created_at: تاريخ الانشاء
-        updated_at: تاريخ التعديل
+        transaction_code: Transaction Number
+        transaction_date: Transaction Date
+        payer_name: Payer
+        created_at: Created at
+        updated_at: Updated at
       contact_us:
-        id: الرقم
-        from: بريد المرسل
-        name: إسم المرسل
-        subject: العنوان
-        content: المحتوى
-        created_at: تاريخ الإرسال
+        id: Identification Number
+        from: Sender
+        name:  Name
+        subject: Subject
+        content: Body
+        created_at: Sent on
       contactus:
-        id: الرقم
-        from: بريد المرسل
-        name: إسم المرسل
-        subject: العنوان
-        content: المحتوى
-        created_at: تاريخ الإرسال
+        id: Identification Number
+        from: Sender
+        name: Name
+        subject: Subject
+        content: Body
+        created_at: Created at
       testimonial:
         id: الرقم
         author: الكاتب
@@ -1186,37 +1186,37 @@ ar<%= "-#{@tenant_name}" %>:
   layouts:
     application:
       title: <%= SiteConfig.site_name %>
-      slogan: منصة <%= SiteConfig.site_name %> للتعليم عن بعد
-      menu: القائمة
-      welcome: مرحبا
-      sign_up: اشترك الآن
-      sign_in: دخول
-      dashboard: <%=@course_ar_locale_pluralized%>ي
-      profile: بياناتي
-      sign_out: خروج
-      copyright: جميع الحقوق محفوظة لدى ال<%=@organization_ar_locale%> الوطني لقياس <%= SiteConfig.site_name %> ال<%= @department_ar_locale_pluralized %> <%= SiteConfig.site_name %> © 2018
-      facebook: فيس بوك
-      twitter: تويتر
-      your_role_is: أنت %{role} لهذه ال<%=@course_ar_locale%>
-      your_role_in_program: أنت مسؤول عن ادارة البرنامج
-      your_role_in_org: أنت مسؤول عن إدارة ال<%=@organization_ar_locale%>
-      email: "info@adaa.gov.sa"
-      email_us: "بريد <%= SiteConfig.site_name %>"
+      slogan:  <%= SiteConfig.site_name %> Platform for Distance Learning
+      menu: Menu
+      welcome: Welcome
+      sign_up: Sign up
+      sign_in: Sign in
+      dashboard: My <%=@course_ar_locale_pluralized%>
+      profile: My Profile
+      sign_out: Sign out
+      copyright: All right reserved to <%=@organization_ar_locale%> الوطني لقياس <%= SiteConfig.site_name %> ال<%= @department_ar_locale_pluralized %> <%= SiteConfig.site_name %> © 2018
+      facebook:  Facebook
+      twitter: Twitter
+      your_role_is: You are a %{role} for the <%=@course_ar_locale%>
+      your_role_in_program: You are an author for the template
+      your_role_in_org: Your are an administrator for the <%=@organization_ar_locale%>
+      email: "info@edwaves.tech"
+      email_us: "e-Mail <%= SiteConfig.site_name %>"
       on_google_plus: "<%= SiteConfig.site_name %> على جوجل بلس"
       on_youtube: "<%= SiteConfig.site_name %> على يوتيوب"
       on_instagram: "<%= SiteConfig.site_name %> على إنستجرام"
-      visit_us_on_facebook: "<%= SiteConfig.site_name %> على فيسبوك"
-      visit_us_on_twitter: "<%= SiteConfig.site_name %> على تويتر"
-      signup_now: "انضم ل<%= SiteConfig.site_name %> الآن!"
-      browse_courses: تصفح ال<%=@course_ar_locale_pluralized%>
-      messages: "الرسائل"
-      you_did_not_activate_your_account_yet: "لم تقم بتأكيد حسابك بعد. تم ارسال رابط التأكيد الى بريدك الإلكتروني"
-      did_not_recieve_yet: "لم تستلم بريد من <%= SiteConfig.site_name %>؟"
-      resend_activation_structure: "اعادة ارسال رابط التأكيد"
-      settings: إعدادات الحساب
-      organization_settings: إعدادات ال<%=@organization_ar_locale%>
+      visit_us_on_facebook: "<%= SiteConfig.site_name %> on Facebook"
+      visit_us_on_twitter: "<%= SiteConfig.site_name %>  on Twitter"
+      signup_now: "Join <%= SiteConfig.site_name %> Now!"
+      browse_courses:  Browse <%=@course_ar_locale_pluralized%>
+      messages: "Messages"
+      you_did_not_activate_your_account_yet: You didn't confirm your email. An activation email has been sent to your eMail.
+      did_not_recieve_yet: "Haven't your received an e-Mail from <%= SiteConfig.site_name %>?"
+      resend_activation_structure: Resend the activation link
+      settings: Account Settings
+      organization_settings: <%=@organization_ar_locale%>' Settings
       wallposts: الحائط
-      live_sessions: الفصول الإفتراضية
+      live_sessions: Live Sessions
     mobile:
       title: <%= SiteConfig.site_name %>
       slogan: منصة <%= SiteConfig.site_name %> للتعليم عن بعد
@@ -1308,14 +1308,14 @@ ar<%= "-#{@tenant_name}" %>:
         success: 'تم التوثيق بنجاح من حساب %{kind}.'
         signed_in: 'تم التوثيق بنجاح من حساب %{kind}.'
   pages:
-    privacy_policy: سياسة الخصوصية
-    terms_conditions: شروط الاستخدام
+    privacy_policy: Privacy Policy
+    terms_conditions: Terms and Conditions
     home_list:
-      title: الرئيسية
-      current: ال<%=@course_ar_locale_pluralized%> الحالية
-      upcoming: ال<%=@course_ar_locale_pluralized%> المرتقبة
-      starts_at: تبدأ فى
-      ends_at: تنتهي في
+      title: Home
+      current: Current <%=@course_ar_locale_pluralized%> 
+      upcoming: Upcoming <%=@course_ar_locale_pluralized%> 
+      starts_at: Starts at
+      ends_at: Ends at
       description: منصة <%= SiteConfig.site_name %> للتعليم عن بعد
       vision_description: رؤية المملكة العربية السعودية 2030
       key_words: "تعليم ,تدريس ,<%=@course_ar_locale_pluralized%> ,<%=@course_ar_locale_pluralized%> ,<%= SiteConfig.site_name %>, MOOC, online courses, online education, elearning"
@@ -1408,22 +1408,22 @@ ar<%= "-#{@tenant_name}" %>:
       on_google_plus: "<%= SiteConfig.site_name %> على جوجل بلس"
       on_youtube: "<%= SiteConfig.site_name %> على يوتيوب"
       on_instagram: "<%= SiteConfig.site_name %> على إنستجرام"
-      login: "دخول"
-      do_login: "قم بتسجيل الدخول"
-      no_current_courses: ﻻ يوجد <%=@course_ar_locale_pluralized%> حالية
-      no_upcoming_courses: ﻻ يوجد <%=@course_ar_locale_pluralized%> مرتقبة
+      login: "Sign in"
+      do_login: Please Sign in
+      no_current_courses: No current <%=@course_ar_locale_pluralized%> 
+      no_upcoming_courses: No upcoming <%=@course_ar_locale_pluralized%> 
       signup:
-        submit: تسجيل
-        tooltip: "قم بالتجسل كعضو في منصة <%= SiteConfig.site_name %>"
-      dashboard: "<%=@course_ar_locale_pluralized%>ي"
-      sign_out: "خروج"
-      browse_all_courses: تصفح جميع ال<%=@course_ar_locale_pluralized%>
-      click_to_browse_under: اضغط لتصفح ال<%=@course_ar_locale_pluralized%>
-      meet_instructors: تعرف على جميع اعضاء الفريق ال<%=@course_ar_locale%>
-      help_us: المساعدة
-      policy: سياسية الخصوصية
-      terms: شروط الاستخدام
-      about_us: من نحن
+        submit: Sign up
+        tooltip: "Sign up to <%= SiteConfig.site_name %>"
+      dashboard: "My <%=@course_ar_locale_pluralized%>"
+      sign_out: "Sign out"
+      browse_all_courses: Browse <%=@course_ar_locale_pluralized%>
+      click_to_browse_under: Click here to browse <%=@course_ar_locale_pluralized%>
+      meet_instructors: Meet <%=@course_ar_locale%>' Instructors
+      help_us: Help
+      policy: Privacy Policy
+      terms:  Terms and Cnditions
+      about_us: About Us
       rwaq_hero:
         text1: <%= SiteConfig.site_name %> - المنصة العربية للتعليم عن بعد
         text2: <%=@course_ar_locale_pluralized%> أكاديمية مجانية باللغة العربية في شتى المجالات والتخصصات
@@ -1522,34 +1522,34 @@ ar<%= "-#{@tenant_name}" %>:
     about_us:
       title: من نحن
   messages:
-    inbox: "الوارد"
-    sent: "الصادر"
-    trash: "المحذوف"
-    send_new_message: "رسالة جديدة "
+    inbox: "Inbox"
+    sent: "Sent"
+    trash: "Trash"
+    send_new_message: " New Message "
     index:
-      title: "الرسائل"
-      no_messages: "لا يوجد رسائل"
-      move_to_trash: "حذف"
-      move_to_inbox: "إلغاء الحذف"
-      cannot_send: لا يوجد لديك الصلاحية
-      msg_title: عنوان الرسالة
-      select_file: إختر الملف
-      sending: جاري الإرسال
+      title: "Messages"
+      no_messages:No Messages
+      move_to_trash: "Delete"
+      move_to_inbox: " Undo Delete"
+      cannot_send: Not authorized
+      msg_title:  Message Title
+      select_file:  Select file
+      sending:  Sending
     show:
-      title: "الرسائل"
-      submit: "أرسل"
+      title: "Messages"
+      submit: "Send"
     new:
-      title: "رسالة جديدة"
+      title: " New Message"
     new_message:
-      submit: "أرسل"
-      select_one: "اختر المرسل اليه"
+      submit: "Send"
+      select_one: "Select Recipient"
   users:
     courses:
-      did_not_enroll: لا يوجد لديك <%=@course_ar_locale_pluralized%>
-      browse_courses: تصفح ال<%=@course_ar_locale_pluralized%>
-      no_courses_so_far: لا يوجد لديك <%=@course_ar_locale_pluralized%>
-      browse_rwaq_courses: تصفح <%=@course_ar_locale_pluralized%> <%= SiteConfig.site_name %>
-      these_courses_are_archived: انتهى تدريس هذه ال<%=@course_ar_locale_pluralized%>، ولكن يبقى بإمكانك الإطلاع على كامل أرشيف المحتويات والتعليقات والنقاشات بين الطلاب حول محتويات هذه ال<%=@course_ar_locale_pluralized%>
+      did_not_enroll: No <%=@course_ar_locale_pluralized%>
+      browse_courses:  Browse <%=@course_ar_locale_pluralized%>
+      no_courses_so_far: No <%=@course_ar_locale_pluralized%>
+      browse_rwaq_courses: Browse <%=@course_ar_locale_pluralized%> <%= SiteConfig.site_name %>
+      these_courses_are_archived:This <%=@course_ar_locale_pluralized%> has been ended, but you can view the archived content of <%=@course_ar_locale_pluralized%>, and students discussions.
     dashboard_course:
       no_certificate_for_self_study: عزيزي الطالب .. لا توجد شهادة لل<%=@course_ar_locale%> التي قمت بالإلتحاق للإطلاع على أرشيفها
       no_certificate_for_no_certificate_course: عزيزي الطالب .. قد قام مدير المحتوى مسبقا بعدم تحديد شهادة لهذة ال<%=@course_ar_locale%>
