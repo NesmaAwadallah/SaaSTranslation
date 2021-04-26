@@ -851,7 +851,7 @@ ar<%= "-#{@tenant_name}" %>:
         offline_maximum_group_size: On-Campus Seats Limit
         continuous_course: <%=@course_ar_locale%> مستمرة
         continuous: <%=@course_ar_locale%> مستمرة
-        require_attendance: لا تعطى الشهادة إلا بعد إكمال جميع المحتويات
+        require_attendance: Certificate can't be granted except after completing all of the content
         signed_in:  Public, Can be accessed by all users
         for_public: متاح حتى بدون تسجيل الدخول
         departments: Restricted, Can be accessed by invited users only
@@ -882,35 +882,35 @@ ar<%= "-#{@tenant_name}" %>:
         published_at: Published at
         published: Published
       user:
-        users: "أعضاء"
-        id: الرقم
-        job: "المسمي الوظيفي"
-        user_name: "اسم المستخدم"
-        image: "صورة شخصية"
-        name: "الاسم"
+        users: Users
+        id: Identification
+        job: Job
+        user_name: Username
+        image: Profile Image
+        name: Full Name
         english_name: "الاسم باللغة الانجليزية"
-        biography: "السيرة الذاتية"
-        email: "البريد الإلكتروني"
-        password: "كلمة المرور"
-        current_password: "كلمة المرور الحالية"
-        password_confirmation: تأكيد كلمة المرور الجديدة
-        remember_me: "تذكرني"
-        courses_teaching: ال<%=@course_ar_locale_pluralized%>
-        gender: النوع
-        birthdate: تاريخ الميلاد
-        education: أحدث مؤهل دراسي
-        city: المدينة
-        country: البلد
-        role: الدور
-        created_at: تاريخ الإنشاء
-        authentications: حسابات أخرى
-        blocked: محظور
-        confirmed: مفعل
-        unconfirmed: غير مفعل
-        facebook: متصل بالفيسبوك
-        twitter: متصل بتويتر
-        public_profile: حساب عام
-        private_profile: حساب خاص
+        biography: Biography
+        email: e-Mail
+        password: Password
+        current_password: Current Password
+        password_confirmation: Confirm New Password
+        remember_me: Remember Me!
+        courses_teaching: The <%=@course_ar_locale_pluralized%>
+        gender: Gender
+        birthdate: Birthdate
+        education: Education Level
+        city: City
+        country: Country
+        role: Role
+        created_at: Created at
+        authentications: Other Accounts
+        blocked: Blocked
+        confirmed: Active
+        unconfirmed: Inactive
+        facebook: Connected to Facebook
+        twitter: Connected to Twitter 
+        public_profile: Public Profile
+        private_profile:  Private Profile
         reset_password_sent_at:  فارغ
         sign_in_count: عدد مرات تسجيل الدخول
         current_sign_in_at: تاريخ الدخول الحالي
@@ -920,7 +920,7 @@ ar<%= "-#{@tenant_name}" %>:
         updated_at: تاريخ التعديل
         confirmed_at: تاريخ تأكيد الحساب
         national_id: رقم الهوية
-        mobile_number: رقم الهاتف
+        mobile_number: Mobile Number
       lms_admin:
         users: "أعضاء"
         id: الرقم
@@ -941,93 +941,93 @@ ar<%= "-#{@tenant_name}" %>:
         updated_at: تاريخ التعديل
         confirmed_at: تاريخ تأكيد الحساب
       section:
-        name: اسم القسم
+        name: Section Title
       department:
-        id: الرقم
-        region: المنطقة
-        name: الاسم
-        max_num_of_members: الحد الأقصى للأعضاء
-        members_count: عدد الاعضاء الحاليين
-        organization: ال<%=@organization_ar_locale%>
-        confirmed_members_count: عدد الأعضاء الذين أكدوا حسابهم
-        users: أعضاء
+        id: Idntification Number
+        region: Region
+        name:  Title
+        max_num_of_members: Maximum number of members
+        members_count: Current Members 
+        organization: The <%=@organization_ar_locale%>
+        confirmed_members_count: Confirmed Accounts
+        users: Members
       lecture:
-        title: العنوان
-        summary: النص
-        video: يوتيوب فيديو
-        external_video_url: رابط يوتيوب فيديو
-        video_type: مصدر الفيديو
+        title: Title
+        summary: Summary
+        video: Video
+        external_video_url: Youtube Vieo Link
+        video_type: Video Source
         video_types:
-          upload: رفع ملف
-          youtube: رابط يوتيوب فيديو
+          upload: Upload File
+          youtube: Youtube link
       attachment:
-        attachedfile: الملف المرفق
-        filename: اسم الملف
+        attachedfile: Attachment
+        filename: File name
       assignment:
-        title: العنوان
+        title: Title
         evaluation_type: إظهار الاستطلاع
-        description: الوصف
-        due_at: أقصى موعد
-        explanation_mark: تعليل؟
-        explanation: تعليل
-        no_explanation: لا يوجد تعليل
-        answer: الإجابة
-        degree: الدرجة
-        retryable: قابل لإعادة المحاولة
-        quiz_flag_txt: اختبار بدون درجات لقياس فهم الطالب
-        wizard: إظهار الاسئلة بشكل متتابع
+        description: Description
+        due_at: Due Date
+        explanation_mark: Justification?
+        explanation: Justification
+        no_explanation: No Justification
+        answer: Answer
+        degree: Grade
+        retryable: Retryable! Take it multiple times.
+        quiz_flag_txt: Non graded quiz for training purposes
+        wizard: Questions are displayed in sequence
       submission:
-        title: العنوان
-        description: الوصف
-        due_at: أقصى موعد
-        # answer: الإجابة
-        degree: الدرجة
+        title: Title
+        description: Description
+        due_at: Due Date
+        # answer: Answer
+        degree: Degree
       question:
-        content: السؤال
+        content: Question
         question_types:
-          mcq: اختيار من متعدد
-          essay: مقال
+          mcq: Multiple Choice Questions
+          essay: Essay
       announcement:
-        title: "عنوان التنويه"
-        content: محتوى التنويه
+        title: Announcement
+        content: Announcement Content
       attempt:
-        taken: المستخدم قام بتسليم المهمة
-        user_id: العضو
-        choices: الإجابات
-        submitted_at: تم التسليم في
-        thanks_for_submitting_assignment: شكرا لإتمامك المهمة
-        before_its_due_date: قبل الموعد المحدد لها
-        assignment_score_will_add_to_your_grade: .. وسوف تضاف تلك الدرجة لرصيدك فى ال<%=@course_ar_locale%>
-        student_submited_at: قام الطالب %{name} بتسليم المهمة في %{submitted_at}
+        taken: Assignment is submitted.
+        user_id: User
+        choices: Answers
+        submitted_at: Submitted at
+        thanks_for_submitting_assignment: Thanks for completing the assignment.
+        before_its_due_date: before the due date
+        assignment_score_will_add_to_your_grade: The overall <%=@course_ar_locale%>' grade will be updated accordingly with the assignment grade
+        student_submited_at: Student "%{name}" submitted the assignment at %{submitted_at}
       student_submission:
-        submitted_at: تم التسليم في
-        thanks_for_uploading_submission: شكرا لإتمامك الواجب
-        before_its_due_date: قبل الموعد المحدد له
-        submission_score_will_add_to_your_grade: .. وسوف تضاف تلك الدرجة لرصيدك فى ال<%=@course_ar_locale%>
-        student_submited_at: قام الطالب %{name} برفع الواجب في %{submitted_at}
-        submission_requires_file_upload: يرجى رفع ملف لاتمام تسليم الواجب
+        submitted_at: Submitted at
+        thanks_for_uploading_submission: Thanks for completing the essay
+        before_its_due_date: before the due date
+        submission_score_will_add_to_your_grade: The oberall <%=@course_ar_locale%>' grade will be updated accordingly with the essay grade
+        student_submited_at: Student "%{name}" submitted the essay at %{submitted_at}
+        submission_requires_file_upload: Please upload a file to deliver the submisstion
       discussion:
-        title: عنوان السؤال
-        body: النص
+        title: Question
+        body: Body
       wallpost:
         title: عنوان المشاركة
         body: النص
       organization:
-        id: الرقم
-        name: "الاسم"
+        id: Identification number
+        name: Title
         english_title:  'الاسم باللغة الانجليزية'
-        slug: سلج
-        english_name : "الاسم المستخدم فى الرابط"
-        email: "البريد الإلكتروني"
-        website: "الموقع الالكتروني"
-        country: البلد
-        logo: "شعار ال<%=@organization_ar_locale%>"
-        image: "صورة الغلاف"
-        description: "الوصف"
-        published_at: تاريخ النشر
-        updated_at: تاريخ التعديل
+        slug: The name to be used in the link
+        english_name : The name to be used in the link
+        email: e-Mail
+        website: Website
+        country: Country
+        logo: <%=@organization_ar_locale%>' Logo
+        image: Cover Image
+        description: Description
+        published_at: Published at
+        updated_at: Updated at
         created_at: تاريخ البدء
-        published: "منشور"
+        published: Published
         logo_processing: معالجة اللوجو
         image_processing: معالجة الغلاف
         paid_courses_authorized: السماح بإنشاء <%=@course_ar_locale_pluralized%> مدفوعة
@@ -1839,40 +1839,40 @@ ar<%= "-#{@tenant_name}" %>:
       new_course_item: فقرة جديدة
       welcome_message_hint: الرسالة الترحيبية هي رسالة سيقرأها الطالب الملتحق بال<%=@course_ar_locale%> في بريد الكتروني فور التحاقه بإسم كل اعضاء الفريق ال<%=@course_ar_locale%>
       maximum_group_size_placeholder: يعتبر عدد المشتركين غير محدود اذا لم يتم ادخال قيمة
-      video_type: مصدر الفيديو
-      free_course: <%=@course_ar_locale%> مجانية
-      paid_course: <%=@course_ar_locale%> مدفوعة
-      price: السعر (دينار)
+      video_type: Video Source
+      free_course: Free <%=@course_ar_locale%> 
+      paid_course: Paid <%=@course_ar_locale%> 
+      price: Price
       paid_course_continuous_hint: ال<%=@course_ar_locale_pluralized%> المدفوعة <%=@course_ar_locale_pluralized%> مستمرة (السعر دينار)
-      vat_add: سيتم إضافة %{vat_percentage}% ضريبة قيمة مضافة
-      paid: نوع ال<%=@course_ar_locale%>
-      choose: اختار فئة
+      vat_add: VAT percentage to be added: %{vat_percentage}% 
+      paid: Tyoe of <%=@course_ar_locale%>
+      choose: Select Category
     edit:
-      delete: حذف البرنامج
-      title: اعدادات البرنامج
-      are_you_sure?:  هل أنت واثق من حذف هذا البرنامج؟
+      delete: Delete Template
+      title: Template Settings
+      are_you_sure?:  You are about to delete the template, are you sure?
     index:
-      title: تصفح البرنامج
+      title: Browse Templates
     sidebar:
-      contents: المحتويات
-      info: عن البرنامج
-      courses: ال<%=@course_ar_locale_pluralized%>
-      cannot_delete_program_contains_courses: لا يمكنك حذف  برنامج يحتوي على <%=@course_ar_locale_pluralized%>
-      are_you_sure?:  هل أنت واثق من حذف هذا البرنامج؟
+      contents: Content
+      info: About the Template
+      courses: The <%=@course_ar_locale_pluralized%>
+      cannot_delete_program_contains_courses: Templates which contain <%=@course_ar_locale_pluralized%> can't be deleted
+      are_you_sure?: You are about to delete the template, are you sure?
     show:
-      are_you_sure?:  هل أنت واثق من حذف هذا البرنامج؟
-      do_you_agree_accept_invitation: هل توافق على الإنضمام لفريق عمل ال<%=@course_ar_locale%> ؟
-      accept_invitation: نعم أقبل دعوة الإنضمام
-      settings: الإعدادات
-      edit_course: تعديل ال<%=@course_ar_locale%>
-      cannot_edit_course: لا يمكنك تعديل ال<%=@course_ar_locale%> بعد انتهائها
-      category: التصنيف
-      read_more: اقرأ المزيد
-      read_less: اقرأ الاقل
-      about_instructor: عن مدير المحتوى
-      visit_instructor_page: اذهب إلى صفحة مدير المحتوى
-      visit_moderator_page: اذهب إلى صفحة المشرف
-      course_curriculum: منهج ال<%=@course_ar_locale%>
+      are_you_sure?:  You are about to delete the template, are you sure?
+      do_you_agree_accept_invitation: Do you agree to join <%=@course_ar_locale%>' team?
+      accept_invitation: Yes, I accept to join.
+      settings: Settings
+      edit_course: Edit <%=@course_ar_locale%>
+      cannot_edit_course: <%=@course_ar_locale%> can't be deleted after being ended.
+      category: Category
+      read_more: More
+      read_less:  Less
+      about_instructor: About the Instructor
+      visit_instructor_page: Visit the instructor page
+      visit_moderator_page: Visit the moderator page
+      course_curriculum: <%=@course_ar_locale%>
       course_prerequisites: المتطلبات
       course_faqs: سؤال وجواب
       enroll_to_course_now: انضم الان
