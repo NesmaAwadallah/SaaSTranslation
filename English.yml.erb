@@ -1551,49 +1551,49 @@ ar<%= "-#{@tenant_name}" %>:
       browse_rwaq_courses: Browse <%=@course_ar_locale_pluralized%> <%= SiteConfig.site_name %>
       these_courses_are_archived:This <%=@course_ar_locale_pluralized%> has been ended, but you can view the archived content of <%=@course_ar_locale_pluralized%>, and students discussions.
     dashboard_course:
-      no_certificate_for_self_study: عزيزي الطالب .. لا توجد شهادة لل<%=@course_ar_locale%> التي قمت بالإلتحاق للإطلاع على أرشيفها
-      no_certificate_for_no_certificate_course: عزيزي الطالب .. قد قام مدير المحتوى مسبقا بعدم تحديد شهادة لهذة ال<%=@course_ar_locale%>
-      no_certificate_ready: لم يتم اعتماد النتيجة بعد ..برجاء الإنتظار
-      continuous_completed_course_certificate_notify_title: تهانينا لقد قمت بإتمام ال<%=@course_ar_locale%>
-      continuous_completed_course_certificate_notify_content: لقد أنهيت ال<%=@course_ar_locale%> بنجاح نتمني رؤيتك في ال<%=@course_ar_locale_pluralized%> القادمة
-      continuous_semi_completed_course_certificate_notify_title: تهانينا لقد قمت بإتمام ال<%=@course_ar_locale%>
-      continuous_semi_completed_course_certificate_notify_content: هناك محتويات لم تنتهي بعد ولكن تستطيع انهاء ال<%=@course_ar_locale%>
+      no_certificate_for_self_study: There is no certificate issued for the <%=@course_ar_locale%> when enrolling after being archived.
+      no_certificate_for_no_certificate_course: According to the certificates configuration by the course moderators, there is no certificates to be issued for <%=@course_ar_locale%>
+      no_certificate_ready: Please wait! The grades are not yet approved.
+      continuous_completed_course_certificate_notify_title: Congratulations! You have completed <%=@course_ar_locale%>.
+      continuous_completed_course_certificate_notify_content: You have completed <%=@course_ar_locale%> Successfully. Looking forwards to seeing you in later <%=@course_ar_locale_pluralized%> القادمة
+      continuous_semi_completed_course_certificate_notify_title: Congratulations! You have completed <%=@course_ar_locale%>.
+      continuous_semi_completed_course_certificate_notify_content:  Although some of the course contents are not yet completed, you can complete <%=@course_ar_locale%>
       continuous_require_attendance_course_certificate_notify_title: جميع المحتويات مطلوبة
       continuous_require_attendance_course_certificate_notify_content: يجي انهاء جميع المحتويات حتي تستطيع انهاء ال<%=@course_ar_locale%>
-      not_continuous_completed_course_certificate_notify_title: تهانينا لقد قمت بإتمام ال<%=@course_ar_locale%>
-      not_continuous_completed_course_certificate_notify_content: يتوجب عليك انتظار المحاضر لإعتماد نتجية ال<%=@course_ar_locale%>
-      not_continuous_semi_completed_course_certificate_notify_title: تهانينا لقد قمت بإتمام ال<%=@course_ar_locale%>
-      not_continuous_semi_completed_course_certificate_notify_content: هناك محتويات لم تنتهي بعد ولكن يستطيع المحاضر حساب درجاتك
+      not_continuous_completed_course_certificate_notify_title: Congratulations! You have completed <%=@course_ar_locale%>
+      not_continuous_completed_course_certificate_notify_content: Please wait for the instructor to approve the <%=@course_ar_locale%>' grades
+      not_continuous_semi_completed_course_certificate_notify_title: Congratulations! You have completed <%=@course_ar_locale%>
+      not_continuous_semi_completed_course_certificate_notify_content: There are contents are not yet completed, the instructor can calculate the grades
       not_continuous_require_attendance_course_certificate_notify_title: جميع المحتويات مطلوبة
-      not_continuous_require_attendance_course_certificate_notify_content: يجي انهاء جميع المحتويات حتي يستطيع المحاضر حساب درجاتك
-      not_continuous_calculated_course_certificate_notify_content: لقد تم اعتماد النتيجة
-      not_continuous_calculated_course_certificate_notify_title: تهانينا لقد قمت بإتمام ال<%=@course_ar_locale%>
-      course_certificated_ended_notify: لا تستطيع الحصول على شهادة لإنك لم تنهي ال<%=@course_ar_locale%> قبل إنتهاء ال<%=@course_ar_locale%>
-      course_certificated_not_ended_notify: تستطيع الحصول على شهادات في هذه ال<%=@course_ar_locale%>
-      course_not_certificated_ended_notify: لم يقرر مدير المحتوى منح شهادات في هذه ال<%=@course_ar_locale%>
-      course_not_certificated_not_ended_notify: لم يقرر مدير المحتوى منح شهادات في هذه ال<%=@course_ar_locale%>
-      course_certificated_ended_student_finished_notify: تستطيع الحصول على شهادات في هذه ال<%=@course_ar_locale%>
-      dear_student: عزيزي الطالب .. لم تحصل على شهادة إكمال في هذه ال<%=@course_ar_locale%> لأنك حصلت على
-      in_this_course: في مهام ال<%=@course_ar_locale%>
-      as_instructor_set: وقد قام مدير المحتوى مسبقا بتحديد نسبة نجاح تساوي
-      good_luck: نتمنى لك التوفيق والنجاح في المرات القادمة
-      no_certificate: لا يوجد شهادة
-      u_did_not_gain_certificate: لماذا لم تحصل على شهادة إكمال
-      moderators: المشرفين
+      not_continuous_require_attendance_course_certificate_notify_content: You have to complete all the course contents to calculate the grades.
+      not_continuous_calculated_course_certificate_notify_content: The grades have been approved.
+      not_continuous_calculated_course_certificate_notify_title:Congratulations! You have completed <%=@course_ar_locale%>
+      course_certificated_ended_notify: You can't receive a certificate because you haven't finished <%=@course_ar_locale%>, before reaching the <%=@course_ar_locale%>' due
+      course_certificated_not_ended_notify: You can't receive a certificate for <%=@course_ar_locale%>
+      course_not_certificated_ended_notify: According to the certificates configuration by the course moderators, there is no certificates to be issued for <%=@course_ar_locale%>
+      course_not_certificated_not_ended_notify: According to the certificates configuration by the course moderators, there is no certificates to be issued for <%=@course_ar_locale%>
+      course_certificated_ended_student_finished_notify: You can receive certificates in this <%=@course_ar_locale%>
+      dear_student: Ypu didn't receive a certificate for <%=@course_ar_locale%>, as you got
+      in_this_course: in the <%=@course_ar_locale%>' assignments
+      as_instructor_set: The instructor has previously set the passing score to 
+      good_luck: Wish you all the luck next time.
+      no_certificate: No certificates issued
+      u_did_not_gain_certificate: Why didn't you get a completion certificate?
+      moderators: Moderators
       title: <%=@course_ar_locale_pluralized%>ي
-      new_course: <%=@course_ar_locale%> جديدة
-      add_course: أضف <%=@course_ar_locale%> جديدة
-      browse_courses: تصفح ال<%=@course_ar_locale_pluralized%>
-      remaining_to_course_end_date: متبقية على انتهاء ال<%=@course_ar_locale%>
-      remaining_to_course_start_date: متبقية على بداية ال<%=@course_ar_locale%>
-      manage_course: "ادارة ال<%=@course_ar_locale%>"
-      are_you_sure?:  هل انت واثق من الانسحاب من هذه ال<%=@course_ar_locale%>؟
-      unenroll: انسحب
+      new_course: New <%=@course_ar_locale%> 
+      add_course: Add new <%=@course_ar_locale%> 
+      browse_courses: Browse <%=@course_ar_locale_pluralized%>
+      remaining_to_course_end_date:remaining for <%=@course_ar_locale%> to end
+      remaining_to_course_start_date: remaining for <%=@course_ar_locale%> to start
+      manage_course: "Manage <%=@course_ar_locale%>"
+      are_you_sure?:  Are you sure you want to withdraw from <%=@course_ar_locale%>؟
+      unenroll: Withdraw
       my_courses: <%=@course_ar_locale_pluralized%>ي
-      my_taking_courses: <%=@course_ar_locale_pluralized%> أدرسها
-      my_moderating_courses: <%=@course_ar_locale_pluralized%> أديرها
-      dashboard: لوحة التحكم
-      enrolled_users: "المشتركين:"
+      my_taking_courses: <%=@course_ar_locale_pluralized%> I study 
+      my_moderating_courses: <%=@course_ar_locale_pluralized%> I manage
+      dashboard: Dashboard
+      enrolled_users: Enrolled Students
       enrolled_users_in_end_course: "المتصفحين:"
       unenrolled_users: "المنسحبين:"
       self_study_hint: الملتحقين بأرشيف ال<%=@course_ar_locale%>
@@ -2251,21 +2251,21 @@ ar<%= "-#{@tenant_name}" %>:
       students_in_course: "%{course_students_count} طالباً ملتحقا بهذه ال<%=@course_ar_locale%>"
       search_result_from_total: "%{result_count} / %{course_students_count}"
     students_statistics:
-      # students_statistics: احصائيات الطلاب
-      current_students_count: عدد الملتحقين
-      current_students_count_due_course_state: عدد الملتحقين وفقا لحالة ال<%=@course_ar_locale%>
-      unenrolled_students_count: عدد المنسحبين
-      unenrolled_students_count_due_reasons: عدد المنسحبين وفقا لسبب الانسحاب
-      finished_students_count: أنهوا ال<%=@course_ar_locale%> حتى اﻵن
-      passed_students_count: حصل على الشهادة
-      successful_students_count: عدد الناجحين
+      # students_statistics: Students Statistics
+      current_students_count: Enrollments
+      current_students_count_due_course_state: Enrollments count according to <%=@course_ar_locale%>' status
+      unenrolled_students_count: Withdrawals
+      unenrolled_students_count_due_reasons: Withdrawals according to withdraw reasons
+      finished_students_count: Finished the <%=@course_ar_locale%> till now.
+      passed_students_count: Received the certificates
+      successful_students_count: Passed
       self_study_count: عدد المتصفحين
       with_percentage: بنسبة
       charts:
-        did_not_finish: لم ينهوا ال<%=@course_ar_locale%>
-        finished_course: أنهوا ال<%=@course_ar_locale%>
-        failed_the_course: لم يجتازوا ال<%=@course_ar_locale%>
-        passed_the_course: اجتازوا ال<%=@course_ar_locale%>
+        did_not_finish: Didn't finish the <%=@course_ar_locale%>
+        finished_course: Finished <%=@course_ar_locale%>
+        failed_the_course:Didn't pass the <%=@course_ar_locale%>
+        passed_the_course: Passed the <%=@course_ar_locale%>
       students:
         zero: ! '%{count} طالب'
         one: طالب واحد
