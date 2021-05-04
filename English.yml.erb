@@ -9,7 +9,6 @@ ar<%= "-#{@tenant_name}" %>:
     working_on_error:  </br> We are checking a solution for the problem.
     home_page: Home Page
 
-  settings:
     index:
       general: General
       color: ألوان الموقع
@@ -1873,31 +1872,31 @@ ar<%= "-#{@tenant_name}" %>:
       visit_instructor_page: Visit the instructor page
       visit_moderator_page: Visit the moderator page
       course_curriculum: <%=@course_ar_locale%>
-      course_prerequisites: المتطلبات
-      course_faqs: سؤال وجواب
-      enroll_to_course_now: انضم الان
-      enroll_to_ended_course: التحق للإطلاع على أرشيف ال<%=@course_ar_locale%>
-      pay_and_enroll_now: ادفع والتحق بال<%=@course_ar_locale%> الآن!
-      we_will_take_amount: أكاديمية <%= SiteConfig.site_name %> سوف تقوم باستقطاع مبلغ %{course_price} <span class='payment_modal_price'>%{currency}</span> من حسابك
-      pay_via: تفاصيل الدفع
-      course_not_started_yet: لم تبدأ ال<%=@course_ar_locale%> بعد
-      unenroll: انسحب من ال<%=@course_ar_locale%>
-      are_you_sure_to_unenroll:  هل انت واثق من الانسحاب من هذه ال<%=@course_ar_locale%>؟
-      accomplishment_certificate: شهادة الإكمال
-      attendance_certificate: شهادة حضور
-      enroll_again: التحق مجددا
-      new_course: <%=@course_ar_locale%> جديدة
-      no_courses_in_this_program: لم تقم بإضافة <%=@course_ar_locale_pluralized%> بعد
-      no_courses_in_this_program_for_viewer: لا يوجد <%=@course_ar_locale_pluralized%>
-      cannot_delete_program_contains_courses: لا يمكنك حذف  برنامج يحتوي على <%=@course_ar_locale_pluralized%>
+      course_prerequisites: Prerequisites
+      course_faqs: Question and Answer
+      enroll_to_course_now: Join Now!
+      enroll_to_ended_course: Join to view ended <%=@course_ar_locale%>
+      pay_and_enroll_now: Pay and Enroll to <%=@course_ar_locale%> الآن!
+      we_will_take_amount:  <%= SiteConfig.site_name %> will deduce the amount %{course_price} <span class='payment_modal_price'>%{currency}</span> from your account.
+      pay_via: Payment Details
+      course_not_started_yet: <%=@course_ar_locale%> not yet started.
+      unenroll: withdraw from <%=@course_ar_locale%>
+      are_you_sure_to_unenroll:  Are you sure you want to withdraw from <%=@course_ar_locale%>؟
+      accomplishment_certificate: Completion Certificate
+      attendance_certificate: Attendance Certificate
+      enroll_again: Join Again
+      new_course: New <%=@course_ar_locale%> 
+      no_courses_in_this_program: No <%=@course_ar_locale_pluralized%> added yet
+      no_courses_in_this_program_for_viewer: No <%=@course_ar_locale_pluralized%>
+      cannot_delete_program_contains_courses: Can't delete a template has <%=@course_ar_locale_pluralized%>
       continuous_course: <%=@course_ar_locale%> مستمرة
-      courses: ال<%=@course_ar_locale_pluralized%>
+      courses: <%=@course_ar_locale_pluralized%>
       timeline: الجدول الزمني
-      thank_you: شكراً
+      thank_you: Thank you
   courses:
     online_and_offline_option:
-      join_course: الانضمام لحضور ال<%=@course_ar_locale%>
-      choose_way_to_enroll: اختر طريقة حضور ال<%=@course_ar_locale%> المناسبة لك
+      join_course: Join <%=@course_ar_locale%>
+      choose_way_to_enroll: Select the suitable type to attend <%=@course_ar_locale%> 
       fully_booked: تم إكتمال العدد
       inform_if_seat_available: قم بإبلاغي اذا توفر مقعد متاح
       sucesss_will_be_informed: سيتم ارسال بريد الكرتوني لك فور توفر مكان متاح
