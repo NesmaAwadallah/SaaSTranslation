@@ -835,7 +835,7 @@ ar<%= "-#{@tenant_name}" %>:
         homepage_summary: "The <%=@course_ar_locale%> Description"
         english_name : "The <%=@course_ar_locale%> name used in the url"
         certificated: " Certificate of Completion"
-        attendance_certificated: " Attendance Certificate "
+        attendance_certificated: " Certificate of Attendance"
         minimum_success_percentage: " Passing Score"
         certificate_language: Generate Certificate in Language:
         total_assignments_weight: "The Total of Weighted Grades"
@@ -1594,15 +1594,15 @@ ar<%= "-#{@tenant_name}" %>:
       dashboard: Dashboard
       enrolled_users: Enrolled Students
       enrolled_users_in_end_course: "المتصفحين:"
-      unenrolled_users: "المنسحبين:"
+      unenrolled_users: Withdrawers
       self_study_hint: الملتحقين بأرشيف ال<%=@course_ar_locale%>
-      empty: لا يوجد لديك <%=@course_ar_locale_pluralized%>
-      did_not_create_courses: لم تقم بإضافة أي <%=@course_ar_locale%>
-      did_not_enroll: لم تلتحق بأي <%=@course_ar_locale%>
-      go_to_course: "اذهب الى ال<%=@course_ar_locale%>"
-      request_enrollment_course: "طلب إلتحاق بالمادة"
-      accomplishment_certificate: شهادة الإكمال
-      attendance_certificate: شهادة حضور
+      empty: No <%=@course_ar_locale_pluralized%> to display
+      did_not_create_courses: No <%=@course_ar_locale%> is added yet
+      did_not_enroll: No enrollment so far to any <%=@course_ar_locale%>
+      go_to_course: "Go to <%=@course_ar_locale%>"
+      request_enrollment_course: "Enrollment Request"
+      accomplishment_certificate: Certificate of Completion
+      attendance_certificate: Certificate of Attendance
       instructor: مدير المحتوى
       continuous_course: <%=@course_ar_locale%> مستمرة
       started_at: بدأت في
@@ -1709,15 +1709,15 @@ ar<%= "-#{@tenant_name}" %>:
       dashboard: لوحة التحكم
       enrolled_users: "المشتركين:"
       enrolled_users_in_end_course: "المتصفحين:"
-      unenrolled_users: "المنسحبين:"
+      unenrolled_users: Withdrawers
       self_study_hint: الملتحقين بأرشيف ال<%=@course_ar_locale%>
       empty: لا يوجد لديك <%=@course_ar_locale_pluralized%>
       did_not_create_courses: لم تقم بإضافة أي <%=@course_ar_locale%>
       you_do_not_have_courses: لا يوجد لديك <%=@course_ar_locale_pluralized%> بعد
       did_not_enroll: لم تلتحق بأي <%=@course_ar_locale%>
       go_to_course: "اذهب الى ال<%=@course_ar_locale%>"
-      accomplishment_certificate: شهادة الإكمال
-      attendance_certificate: شهادة حضور
+      accomplishment_certificate: Certificate of Completion
+      attendance_certificate: Certificate of Attendance
       instructor: مدير المحتوى
     dashboard_header:
       as: 'ك'
@@ -1883,7 +1883,7 @@ ar<%= "-#{@tenant_name}" %>:
       unenroll: withdraw from <%=@course_ar_locale%>
       are_you_sure_to_unenroll:  Are you sure you want to withdraw from <%=@course_ar_locale%>؟
       accomplishment_certificate:  Certificate of Completion
-      attendance_certificate: Attendance Certificate
+      attendance_certificate: Certificate of Attendance
       enroll_again: Join Again
       new_course: New <%=@course_ar_locale%> 
       no_courses_in_this_program: No <%=@course_ar_locale_pluralized%> added yet
@@ -1939,7 +1939,7 @@ ar<%= "-#{@tenant_name}" %>:
       english_version: English Copy
     download_accomplishment_certificate:
       accomplishment_certificate: Certificate of Completion
-      attendance_certificate: Attendance Certificate
+      attendance_certificate: Certificate of Attendance
       rwaq_grants_certificate:  <%=SiteConfig.site_name%> awards
       completed_course: "completed the <%=@course_ar_locale%> "
       attended_course: "attended the <%=@course_ar_locale%>"
@@ -1984,8 +1984,8 @@ ar<%= "-#{@tenant_name}" %>:
       few: ! '%{count} واجبات '
       many: ! '%{count} واجب '
       other: ! '%{count} واجب '
-    you_did_not_gain_accomplishment_certificate: لم تحصل على شهادة إكمال
-    you_did_not_gain_attendance_certificate: لم تحصل على شهادة حضور
+    you_did_not_gain_accomplishment_certificate: You didn't receive a Certificate of Completion
+    you_did_not_gain_attendance_certificate: You didn't receive a Certificate of Attendance
     weights_should_equal_100_before_ending_course: "مجموع نسب المهام يجب ان يساوى 100% قبل اعتماد النتيجة"
     status_messages:
       reject_course_member: إلغاء الدعوة
@@ -2008,22 +2008,22 @@ ar<%= "-#{@tenant_name}" %>:
       in_course_deliverables: في مهام و واجبات ال<%=@course_ar_locale%>
       now_you_can_end_course_and_send_certificate: الآن يمكنك اعتماد انهاء ال<%=@course_ar_locale%> .. وسيتم إرسال بريدا إلكترونيا و شهادة إكمال لجميع الطلاب الحاصلين على نسبة أعلى من
       in_course_assignments_after_you_end_it: في مهام ال<%=@course_ar_locale%> بعد اعتماد إنهاء ال<%=@course_ar_locale%> .
-      accomplishment_certificates: شهادات إكمال
-      attendance_certificates: شهادة حضور
+      accomplishment_certificates: Certificate of Completion
+      attendance_certificates: Certificate of Attendance
       would_you_give_studends_certificates: هل ترغب في إرسال شهادات إكمال للطلاب؟
       confirm_certificate_edit  : فضلاً قم بتأكيد اختيارك في صفحة الإعدادات.
       the_edits: إعدادات شهادة الإكمال
       not_now: ليس الآن
-      accomplishment_certificate: شهادة الإكمال
-      attendance_certificate: شهادة حضور
+      accomplishment_certificate: Certificate of Completion
+      attendance_certificate: Certificate of Attendance
       certificates_sending: انتهت ال<%=@course_ar_locale%>، يتم إرسال شهادات إكمال لجميع الطلاب الحاصلين على نسبة أعلى من
       in_course_assignments_and_will_recieve_email: في مهام ال<%=@course_ar_locale%> الان, و سوف تتلقى أيضا بريدا الكترونيا بعد اتمام ارسال شهادة الإكمال للطلاب
       end_course: إنهاء ال<%=@course_ar_locale%>
       course_is_graded: تم اعتماد النتيجة بنجاح
       course_about_to_end: لقد أوشكت ال<%=@course_ar_locale%> على الإنتهاء. بإمكانك القيام بالتعديل اللازم لمنح الدارسين شهادات إكمال
       edit: تعديل
-      certificate_copy: صورة شهادة الإكمال
-      attendance_certificate_copy: صورة شهادة الحضور
+      certificate_copy: Copy of "Certificate of Completion"
+      attendance_certificate_copy: Copy of "Certificate of Attendance"
       are_you_sure_to_confirm_ending_course: هل أنت واثق من إنهاء ال<%=@course_ar_locale%>؟ الرجاء ملاحظة أنه لن يمكنك تعديل أي من الإعدادات بعد إنهاء ال<%=@course_ar_locale%>.
       you_may_also_need: مازال بإمكانك تعديل عدد الطلاب الناجحين عن طريق الإعدادات التالية
       edit_assignment_weights: تعديل نسب المهام
@@ -2032,8 +2032,8 @@ ar<%= "-#{@tenant_name}" %>:
       course_start_at: لم تبدأ ال<%=@course_ar_locale%> بعد, باقى %{date} على بداية ال<%=@course_ar_locale%>
       course_ended_at: انتهت ال<%=@course_ar_locale%> في يوم %{date}
       course_closed_at: تم إنهاء ال<%=@course_ar_locale%> في %{date}
-      certificate_sent_at:  و تم إرسال شهادات الإكمال في %{date}
-      attendance_certificate_sent_at:  و تم إرسال شهادات الحضور في %{date}
+      certificate_sent_at: Certificate of Attendance have been issued at %{date}
+      attendance_certificate_sent_at:  Certificate of Attendance have been issued at %{date}
       succesfull_students_are_do_you_agree: 'بنجاح %{students_count} طالباً الحاصلين على نسبة نجاح % %{percentage} على الأقل '
       attendance_students_are_do_you_agree: و بحضور %{attendaces_count} طالب بنسبة حضور % %{percentage} على الأقل، يمكنك الآن إرسال الشهادات بنجاح
       succesfull_students_are_do_you_agree_to_close: عدد الطلاب الحاصلين على نسبة % %{percentage} على الأقل (نسبة النجاح) هو %{students_count} طالباً.
@@ -2360,8 +2360,8 @@ ar<%= "-#{@tenant_name}" %>:
       course_not_started_yet: لم تبدأ ال<%=@course_ar_locale%> بعد
       unenroll: انسحب من ال<%=@course_ar_locale%>
       are_you_sure_to_unenroll:  هل انت واثق من الانسحاب من هذه ال<%=@course_ar_locale%>؟
-      accomplishment_certificate: شهادة الإكمال
-      attendance_certificate: شهادة حضور
+      accomplishment_certificate: Certificate of Completion
+      attendance_certificate:Certificate of Attendance
       enroll_again: التحق مجددا
       discount: ادخال
       no_instructors_assigned_yet: لا يوجد اعضاء الفريق
@@ -2434,14 +2434,14 @@ ar<%= "-#{@tenant_name}" %>:
       trainees_attendance: الحضور
       settings: إعدادات
       reports: تقارير
-      accomplishment_certificate: شهادة الإكمال
-      attendance_certificates: شهادة الحضور
+      accomplishment_certificate: Certificate of Completion
+      attendance_certificates: Certificate of Attendance
       from_to: من %{start} إلى %{end}
       lectures: المحاضرات
       assignments: المهام
       submissions: الواجبات
       evaluations: الاستطلاعات
-      attendance_certificate: شهادة الحضور
+      attendance_certificate: Certificate of Attendance
       enrolled: الملتحقين
       add_students: إضافة طلاب
       enrollment_requests: طلبات الإلتحاق
@@ -3309,21 +3309,21 @@ ar<%= "-#{@tenant_name}" %>:
     this_link: الرابط
     email_feedback: نأمل منك التواصل معنا عبر البريد الالكتروني في حال واجهتك أي مشكلة تقنية.
     team_greetings: "مع تحيات فريق %{team_name}"
-    progress_sent_certificates: تم إرسال شهادات الإكمال للطلاب في <%=@course_ar_locale%> %{course_title}
-    progress_sent_attendance_certificates: تم إرسال شهادات الحضور للطلاب في <%=@course_ar_locale%> %{course_title}
-    certificates_sent_to: تم إرسال شهادات الإكمال ل %{user_count} طالب
-    attendance_certificates_sent_to: تم إرسال شهادات الحضور ل %{user_count} طالب
+    progress_sent_certificates: <%=@course_ar_locale%> %{course_title}'s students were issued a "Certificate of Completion"
+    progress_sent_attendance_certificates: <%=@course_ar_locale%> %{course_title}'s students were issued "Certificate of Attendance"
+    certificates_sent_to: %{user_count} students were issued a "Certificate of Completion"
+    attendance_certificates_sent_to:  %{user_count} students were issued a "Certificate of Attendance"
     got_percentage_greater_than: الحاصلين على نسبة أعلى من
     got_percentage_greater_than_attendance: الذين حضروا بنسبة أعلى من
     no_studend_passed: لا يوجد طلاب حاصلين على نسبة أعلى من %{percentage} في <%=@course_ar_locale%> %{course_title}
     no_studend_attended: لا يوجد طلاب حضروا بنسبة %{percentage} على الأقل في <%=@course_ar_locale%> %{course_title}
-    no_studend_passed_p: لم نقم بإرسال شهادات إكمال للطلاب فى <%=@course_ar_locale%>
-    no_studend_attended_p: لم نقم بإرسال شهادات حضور للطلاب فى <%=@course_ar_locale%>
+    no_studend_passed_p: <%=@course_ar_locale%>'s students were not issued a "Certificate of Completion"
+    no_studend_attended_p:  <%=@course_ar_locale%>'s students were not issued a "Certificate of Attendance"
     in_course: في <%=@course_ar_locale%>
     because_no_students_matches: لعدم إنطباق شروط الحصول على نسبة أعلى من
     because_no_students_matches_attendance: لعدم إنطباق شروط الحصول على نسبة أعلى من
     for_any_of_them: لأيا منهم
-    number_of_successful_students: عدد الطلاب الحاصلين على نسبة أعلى من % %{percentage} هو %{success_count}, وتم إرسال شهادات إكمال ل %{certified_count} منهم
+    number_of_successful_students: Count of students who get above % %{percentage} is %{success_count}, and "Certificate of Completion" was issued to %{certified_count} of them
     to_see_latest_announcements: للإطلاع على أخر التنويهات والجديد في هذه ال<%=@course_ar_locale%> قم بزيارة
     course_page: صفحة ال<%=@course_ar_locale%>
     thanks_to_enroll: شكراً لانضمامك معنا في هذه ال<%=@course_ar_locale%>
@@ -3434,9 +3434,9 @@ ar<%= "-#{@tenant_name}" %>:
     your_user_data_has_been_updated_successfully: "تم التعديل بنجاح"
     email_has_been_updated_successfully: "برجاء قم زيارة بريديك الالكتروني لتأكيد التغيير"
     images_are_uploading: تحميل الصور يأخذ بعض الدقائق. يرجى اعادة تحديث الصفحة لرؤيتها
-    setting_course_certificate_updated_successfully: تم حفظ إعدادات ال<%=@course_ar_locale%> بنجاح.
-    no_certificates: " لن يتم إرسال شهادات الإكمال إلا إذا قمت بتغيير الإعدادات مرة اخرى"
-    there_is_certificates: " سيتم إرسال شهادات الإكمال للطلاب بعد اعتماد انهاء ال<%=@course_ar_locale%>"
+    setting_course_certificate_updated_successfully: <%=@course_ar_locale%>' settings are updated successfully
+    no_certificates: " Certificates of Completion" will not be issued, until the settings are changed again.
+    there_is_certificates: " Certificate of Completion" will be issued when the <%=@course_ar_locale%>" is confirmed to be ended.
     invitation_canceled: تم إلغاء الدعوة
     message_sent: "تم إرسال الرسالة بنجاح"
     messages_sent_to_trash: "تم وضع الرسائل فى صندوق الرسائل المحذوفة"
@@ -3447,8 +3447,8 @@ ar<%= "-#{@tenant_name}" %>:
     complete_content_before_finishing_course: عفوا، هذه ال<%=@course_ar_locale%> تستلزم إكمال جميع المحتويات وتسليم جميع المهمات والواجبات قبل انهائها
     continuous_course_completed_with_success: تهانينا، لقد أكملت ال<%=@course_ar_locale%> وتجاوزت نسبة النجاح، شهادة الإكمال سوف تصلك على بريدك الإلكتروني في أقرب وقت
     continuous_course_completed_with_failure: شكرا لإكمالك ال<%=@course_ar_locale%>، للأسف لم تتخط نسبة النجاح المرجوة
-    continuous_course_completed_no_certificates: شكرا لإكمالك ال<%=@course_ar_locale%>
-    course_does_not_provide_certificate: لم يقرر مدير المحتوى منح شهادات في هذه ال<%=@course_ar_locale%>
+    continuous_course_completed_no_certificates: Thanks for completing the <%=@course_ar_locale%>
+    course_does_not_provide_certificate: No certifiate awarded for that <%=@course_ar_locale%>
     course_deliverables_weights_not_valid: عذرا، لم يقم مدير المحتوى بعد بتحديد نسب المهام/الواجبات، لا يمكن حساب درجاتك اﻵن
     course_does_not_have_deliverables: عذرا، لم يقم مدير المحتوى بإضافة و نشر أي مهمة أو تقرير بعد, لا يمكن حساب درجاتك اﻵن
     continuous_courses_allow_retying_assignments: يرجى الانتباه أن جميع المهام في ال<%=@course_ar_locale_pluralized%> المستمرة تسمح للطلاب بإعادة المحاولة/التسليم، يمكنك تغيير ذلك من صفحة إعدادات كل مهمة على حدة
@@ -4275,7 +4275,7 @@ ar<%= "-#{@tenant_name}" %>:
     ZM: زامبيا
     ZW: زيمبابوي
   certificates:
-    congratulation_message: "تهانينا لقد أنهيت ال<%= @course_ar_locale %> بنجاح أحصل الان على"
+    congratulation_message: "Congratulations! You have successfully completed the <%= @course_ar_locale %>. Gt your "
   site_config:
     homepage_image_hint: برجاء ان تكون الصورة 1280x720 على الأقل, نوصي باستخدام امتدادات (jpg, jpeg) ونقبل امتدادات أخرى (gif, svg, png)
     public_registeration_enabled_hint: عندالتفعيل يتمكن الطلاب من الالحاق بالمواد بدون دعوات
