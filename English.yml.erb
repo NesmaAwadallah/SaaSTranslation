@@ -389,15 +389,15 @@ ar<%= "-#{@tenant_name}" %>:
       wrong_length: Inappropriate length, (shall be %{count})
       in_past: Shall be in the future
       retryable_continuous_course_only: إعادة المحاولة متاحة فقط لل<%=@course_ar_locale_pluralized%> المستمرة
-      retryable_assignments_only: إعادة المحاولة متاحة فقط للمهام ذات النسب
-      email_must_be_existed: العضو غير موجود
-      english_format_only: "استخدم فقط الحروف الانجليزية، اﻷرقام، والعلامات _ و -"
-      min_size_error: "حجم الملف المرفوع يجب أن يكون أكبر من %{min_size}"
-      max_size_error: "حجم الملف المرفوع يجب أن يكون أقل من %{max_size}"
-      extension_whitelist_error: "لا يمكنك رفع ملف بصيغة %{extension}, الصيغ المدعومة: %{allowed_types}"
-      url_invalid: الرابط غير صحيح
+      retryable_assignments_only: Only weighted assignments can be retryable.
+      email_must_be_existed: The email your are trying to add has no account
+      english_format_only: "English letters, numbers and signs - and _ are only allowed"
+      min_size_error: "The file size to be uploaded shall exceed %{min_size}"
+      max_size_error: "The file size to be uploaded shall not exceed  %{max_size}"
+      extension_whitelist_error: " %{extension} is not allowed to be upoaded. Allowed extensions: %{allowed_types}"
+      url_invalid: Invalid URL
     template:
-      body: ! 'يرجى التحقق من الحقول التالية:'
+      body: Check the below fields:
       header:
         zero: ! 'ليس بالامكان حفظ %{model}: %{count} أخطاء.'
         one: ! 'ليس بالامكان حفظ %{model}: خطأ واحد.'
@@ -407,25 +407,24 @@ ar<%= "-#{@tenant_name}" %>:
         other: ! 'ليس بالامكان حفظ %{model}: %{count} أخطاء.'
     models:
       user:
-        file: الملف غير صحيح , برجاء اتباع الملف المرفق
-        csv: مسموح بملف بصيغة csv
+        file: Inavlid file, please follow the attached sample file format
+        csv: csv file format is only allowed
         attributes:
           email:
-            confirmation_period_expired: لقد إنتهت صلاحية رابط التأكيد، يرجى إعادة طلب رابط جديد
-            invalid: غير مقبول. يسمح فقط بالحروف الانجليزية و الارقام وعلامة (-) وعلامة (_)
+            confirmation_period_expired: The email verification link has expired, regnerate new verification link?
+            invalid: Invalid! "English letters, numbers and signs - and _ are only allowed"
           mobile_number:
-            invalid: يرجي ادخال رقم جوال على هيئة 9665xxxxxxxx
-            taken: مستخدم بالفعل
+            invalid: Please enter a valid mobile number format. Ex: 9665xxxxxxxx
+            taken: Already in use
           national_id:
-            invalid: يرجى ادخال رقم هوية صحيح
-            taken: مستخدم بالفعل
+            invalid: Invalid! Enter a valid personal identification number
+            taken: Already in use
       attachment:
         attributes:
           attachedfile:
-            size_too_big: "حجم الملف كبير, الحد الاقصى 50 ميجا بايت"
-            size_too_small: "حجم الملف صغير, الحد الادنى 1 بايت"
-      student_submission:
-        time_finished: انتهى وقت التقرير
+            size_too_big: A too big file size! Maximum size is 50MB.
+            size_too_small: A too small file size! Minimum size is 1B.
+        time_finished: The submission due date is recheached 
         submitted_before: قام بتسليم الواجب من قبل
       student_submission_file:
         attributes:
@@ -964,7 +963,7 @@ ar<%= "-#{@tenant_name}" %>:
         filename: File name
       assignment:
         title: Title
-        evaluation_type: إظهار الاستطلاع
+        evaluation_type: Survey
         description: Description
         due_at: Due Date
         explanation_mark: Justification?
@@ -2437,98 +2436,98 @@ ar<%= "-#{@tenant_name}" %>:
       accomplishment_certificate: Certificate of Completion
       attendance_certificates: Certificate of Attendance
       from_to: من %{start} إلى %{end}
-      lectures: المحاضرات
-      assignments: المهام
-      submissions: الواجبات
-      evaluations: الاستطلاعات
+      lectures: Lectures
+      assignments: Assignments
+      submissions: Essays
+      evaluations: Surveys
       attendance_certificate: Certificate of Attendance
-      enrolled: الملتحقين
-      add_students: إضافة طلاب
-      enrollment_requests: طلبات الإلتحاق
-      waiting_list: قائمة الإنتظار
-      students: الطلاب
+      enrolled: Enrolled
+      add_students: Add Student
+      enrollment_requests: Enrollment Requests
+      waiting_list: Waiting-list
+      students: Students
     invited_departments:
-      members: ال<%= @department_ar_locale_pluralized %>
-      title: الدعوات
-      invite: دعوة <%= @department_ar_locale %>
-      choose: اختر <%= @department_ar_locale %>
-      available_seats: المقاعد المتاحة
-      all_invited: تم دعوة جميع ال<%= @department_ar_locale_pluralized %>
-      total_seats_limit_reached: لا يوجد مقاعد متاحة
-      cannot_invited_before_publish: لا يمكنك دعوة أعضاء قبل نشر ال<%=@course_ar_locale%>
+      members: <%= @department_ar_locale_pluralized %>
+      title: Invitations
+      invite: Invitation <%= @department_ar_locale %>
+      choose: Select <%= @department_ar_locale %>
+      available_seats: Available seats
+      all_invited: All <%= @department_ar_locale_pluralized %> were invited
+      total_seats_limit_reached: No seats available
+      cannot_invited_before_publish: No invitations to take place befor publishing <%=@course_ar_locale%>
     navigation:
-      you_can_reorder_content: يمكنك تغيير ترتيب المحتوى
-      browse_content: قائمة المحتويات
-      empty_section: لم تقم بإضافة اي محتوى في هذا القسم بعد
-      not_seen_part: لم تقم بانهاء هذا الجزء بعد
-      locked_to_see: يجب إكمال المحتويات السابقة
-      locked_until_evaluation: يجب تسليم الاستطلاع
-      locked_until_course_ended: برجاء الإنتظار حتى انتهاء ال<%=@course_ar_locale%>
-      seen_part: لقد انهيت هذا الجزء
-      evaluation_submitted: لقد قمت بتسليم الاستطلاع
-      cannot_edit_assignment_after_published_assignment: لا يمكنك تعديل المهمة بعد نشرها
-      cannot_edit_assignment_after_publish:  لا يمكنك تعديل المهمة بعد النشر
-      cannot_edit_assignment_after_ended_course: لا يمكنك تعديل المهمة بعد انتهاء ال<%=@course_ar_locale%>
-      cannot_edit_submission_after_ended_course: لا يمكنك تعديل الواجب بعد انتهاء ال<%=@course_ar_locale%>
-      cannot_add_resources: لا يمكنك اضافة محتوى أو مهمة جديدة بعد إنتهاء ال<%=@course_ar_locale%>
-      cannot_edit_section: لا يمكنك تعديل القسم بعد إنتهاء ال<%=@course_ar_locale%>
-      cannot_add_lecture: لا يمكنك اضافة محتوى جديد بعد انتهاء ال<%=@course_ar_locale%>
-      cannot_add_assignment: لا يمكنك اضافة مهمة جديدة بعد انتهاء ال<%=@course_ar_locale%>
-      cannot_add_submission: لا يمكنك اضافة واجب جديد بعد انتهاء ال<%=@course_ar_locale%>
-      edit_section: تعديل القسم
-      add_content: اضافة محتوى جديد
-      cannot_add_section: لا يمكنك اضافة قسم بعد انتهاء ال<%=@course_ar_locale%>
-      cannot_add_evaluation: استطلاع ال<%=@course_ar_locale%> موجود بالفعل
-      cannot_add_survey: تقييم ال<%=@course_ar_locale%> موجود بالفعل
-      new_section: قسم جديد
-      new_lecture: محتوى جديد
-      new_assignment: مهمة جديدة
-      new_submission: واجب جديد
-      minute: دقيقة
-      second: ثانية
-      due_time: أقصى موعد
-      undetermined_time: غير محدد بوقت
-      unpublished: غير منشور
-      submit_title: تم التسليم في الموعد
-      not_submit_title: لم يتم التسليم في الموعد
-      submitted: تم التسليم
-      not_submitted: لم يتم التسليم
-      published: تم النشر
-      not_published_yet: لم تقم بنشر هذا الجزء بعد
-      edit_lecture: تعديل المحتوى
-      edit_assignment: حفظ التعديلات
-      edit_submission: تعديل الواجب
-      add_evaluation: أضف استطلاع
-      add_survey: أضف تقييم ال<%=@course_ar_locale%>
-      precourse_evaluation: استطلاع قبل ال<%=@course_ar_locale%>
-      postcourse_evaluation: استطلاع بعد ال<%=@course_ar_locale%>
+      you_can_reorder_content: Resort the content
+      browse_content: Content
+      empty_section: No content is added to that section
+      not_seen_part: It is not yet done
+      locked_to_see: Previous content shall be completed first
+      locked_until_evaluation: The survey shall be delivered
+      locked_until_course_ended: Please wait till the <%=@course_ar_locale%> ends
+      seen_part: It's done
+      evaluation_submitted: The survey is submitted
+      cannot_edit_assignment_after_published_assignment: Assignment can't be updated after being published
+      cannot_edit_assignment_after_publish:  Assignments can't be updated after being published
+      cannot_edit_assignment_after_ended_course: Assignments can't be updated after the <%=@course_ar_locale%> is ended
+      cannot_edit_submission_after_ended_course: Assignments can't be updated after the <%=@course_ar_locale%> is ended
+      cannot_add_resources: No lecture to be added after the <%=@course_ar_locale%> is ended
+      cannot_edit_section: No edit for the section after the <%=@course_ar_locale%> is ended
+      cannot_add_lecture:No lecture to be added after the <%=@course_ar_locale%> is ended
+      cannot_add_assignment: New assignemt can't be added after the <%=@course_ar_locale%> is ended
+      cannot_add_submission: New essay can't be added after the <%=@course_ar_locale%> is ended
+      edit_section: Edit Section
+      add_content: New Content
+      cannot_add_section: No section to be added after the <%=@course_ar_locale%> is ended
+      cannot_add_evaluation:  The <%=@course_ar_locale%>' survey already exists 
+      cannot_add_survey:  The <%=@course_ar_locale%> ' evaluation already exists 
+      new_section: New Section
+      new_lecture: New Lecture
+      new_assignment: New Assignment
+      new_submission: New Essay
+      minute: Minute
+      second: Second
+      due_time: Due Date
+      undetermined_time: Has no due date
+      unpublished: Draft/Unpublished
+      submit_title: Submitted on time
+      not_submit_title: Not submitted on time
+      submitted: Submitted
+      not_submitted:Not submitted
+      published: Published
+      not_published_yet: It's not yet published
+      edit_lecture: Edit Lecture
+      edit_assignment: Save changes
+      edit_submission: Edit Essay
+      add_evaluation: Add Survey
+      add_survey: Add <%=@course_ar_locale%>' evaluation
+      precourse_evaluation: Pre-<%=@course_ar_locale%>' Survey
+      postcourse_evaluation: Post-<%=@course_ar_locale%>' Survey
       reports:
-        lectures: المحاضرات
-        assignments: المهام
-        submissions: الواجبات
-        evaluations: الاستطلاعات
-        students: الطلاب
+        lectures: Lectures
+        assignments: Assignments
+        submissions: Essays
+        evaluations: Surveys
+        students: Sudents
     errors:
-      english_name_can_not_be_number: لا يسمح ان يكون رقما. من فضلك ادخل بعض الحروف
-      not_found: "عفوا، <%=@course_ar_locale%> التي تحاول الوصول إليها غير موجودة‎!"
-      not_authorized: "عفوا، <%=@course_ar_locale%> التي تحاول الوصول إليها غير متاحة الآن!"
+      english_name_can_not_be_number: It can't be a numbers' only. Please add letters!
+      not_found: "Sorry, the <%=@course_ar_locale%> is not found!"
+      not_authorized: "Sorry, <%=@course_ar_locale%> is not accessible!"
     student_report:
-      student_profile: صفحة الطالب
-      you_are_self_studying_course: انت ملتحق بعد انتهاء ال<%=@course_ar_locale%>
-      enrolled_after_course_end: التحق بعد انتهاء ال<%=@course_ar_locale%>
-      finished_continuous_course: أنهيت ال<%=@course_ar_locale%>
+      student_profile: Student Profile
+      you_are_self_studying_course: You enrolled after the <%=@course_ar_locale%> has ended
+      enrolled_after_course_end: Enrolled after the <%=@course_ar_locale%> has ended
+      finished_continuous_course: The <%=@course_ar_locale%> is completed
       finishing_course_confirmation: هل انت متأكد من انهائك لل<%=@course_ar_locale%>؟ سيتم حساب درجاتك ولن يمكن التراجع لاحقا
       finishing_course_title: هل انت متأكد من انهائك لل<%=@course_ar_locale%>؟
-      evaluations: استطلاع ال<%=@course_ar_locale%>
-      survey: تقييم ال<%=@course_ar_locale%>
+      evaluations:  <%=@course_ar_locale%>' Survey
+      survey: <%=@course_ar_locale%>' Evaluation
       student_card:
-        no_job: لم يحدد الوظيفة
-        no_biography: لا توجد نبذة عن الطالب
-        student: طالب
-        no_education: لم يحدد مرحلته التعليمية
-        no_birthdate: لم يحدد تاريخ الميلاد
-        no_country: لم يحدد الدولة
-        enrolled_at: انضم لهذه ال<%=@course_ar_locale%> في
+        no_job: The field of "job" is empty
+        no_biography: The section of "biography" is empty
+        student: Student
+        no_education: The field of "education level" is empty
+        no_birthdate: Birthdate is unspecified
+        no_country: Country is unspecified
+        enrolled_at: Enrolled to <%=@course_ar_locale%> at
         age:
           one: سنة
           two: 'سنتان'
@@ -2550,7 +2549,7 @@ ar<%= "-#{@tenant_name}" %>:
         last_submission_uploaded: آخر واجب تم رفعه
         course_has_no_published_submissions: لا توجد واجبات منشورة في هذه ال<%=@course_ar_locale%>
         course_has_no_published_evaluation: لا توجد استطلاعات منشورة لهذه ال<%=@course_ar_locale%>
-        no_submitted_evaluations_yet: لم يقم بتسليم الاستطلاع
+        no_submitted_evaluations_yet: The survey is not yet submitted
         course_has_no_published_survey: لايوجد تقييم منشور لهذه ال<%=@course_ar_locale%>
         no_submitted_survey_yet: لم يقم بتسليم التقييم
       seen_lectures: محتويات تمت مشاهدتها
@@ -2793,7 +2792,7 @@ ar<%= "-#{@tenant_name}" %>:
       did_not_published: لأنك لم تقم بنشرها بعد
       no_student_complete_it: حيث لم يقم اي طالب بتسليم المهمة بعد
     comparison_report:
-      evaluations_comparison: مقارنة استطلاع قبل وبعد ال<%=@course_ar_locale%>
+      evaluations_comparison: Compare the <%=@course_ar_locale%>' pre and post sruveys
       help: مساعدة
       full_answer: "% الحاصلين على 100"
       a_degrees: "% (الحاصلين على (90-99"
