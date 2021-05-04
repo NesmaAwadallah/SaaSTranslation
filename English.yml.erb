@@ -834,7 +834,7 @@ ar<%= "-#{@tenant_name}" %>:
         subtitle: "Subtitle"
         homepage_summary: "The <%=@course_ar_locale%> Description"
         english_name : "The <%=@course_ar_locale%> name used in the url"
-        certificated: "Completion Certificate"
+        certificated: " Certificate of Completion"
         attendance_certificated: " Attendance Certificate "
         minimum_success_percentage: " Passing Score"
         certificate_language: Generate Certificate in Language:
@@ -1552,7 +1552,7 @@ ar<%= "-#{@tenant_name}" %>:
     dashboard_course:
       no_certificate_for_self_study: There is no certificate issued for the <%=@course_ar_locale%> when enrolling after being archived.
       no_certificate_for_no_certificate_course: According to the certificates configuration by the course moderators, there is no certificates to be issued for <%=@course_ar_locale%>
-      no_certificate_ready: Please wait! The grades are not yet approved.
+      no_certificate_ready: Please wait! The calculated grades are under review.
       continuous_completed_course_certificate_notify_title: Congratulations! You have completed <%=@course_ar_locale%>.
       continuous_completed_course_certificate_notify_content: You have completed <%=@course_ar_locale%> Successfully. Looking forwards to seeing you in later <%=@course_ar_locale_pluralized%> القادمة
       continuous_semi_completed_course_certificate_notify_title: Congratulations! You have completed <%=@course_ar_locale%>.
@@ -1577,7 +1577,7 @@ ar<%= "-#{@tenant_name}" %>:
       as_instructor_set: The instructor has previously set the passing score to 
       good_luck: Wish you all the luck next time.
       no_certificate: No certificates issued
-      u_did_not_gain_certificate: Why didn't you get a completion certificate?
+      u_did_not_gain_certificate: Why didn't you get a certificate of completion?
       moderators: Moderators
       title: <%=@course_ar_locale_pluralized%>ي
       new_course: New <%=@course_ar_locale%> 
@@ -1882,7 +1882,7 @@ ar<%= "-#{@tenant_name}" %>:
       course_not_started_yet: <%=@course_ar_locale%> not yet started.
       unenroll: withdraw from <%=@course_ar_locale%>
       are_you_sure_to_unenroll:  Are you sure you want to withdraw from <%=@course_ar_locale%>؟
-      accomplishment_certificate: Completion Certificate
+      accomplishment_certificate:  Certificate of Completion
       attendance_certificate: Attendance Certificate
       enroll_again: Join Again
       new_course: New <%=@course_ar_locale%> 
@@ -1891,58 +1891,58 @@ ar<%= "-#{@tenant_name}" %>:
       cannot_delete_program_contains_courses: Can't delete a template has <%=@course_ar_locale_pluralized%>
       continuous_course: <%=@course_ar_locale%> مستمرة
       courses: <%=@course_ar_locale_pluralized%>
-      timeline: الجدول الزمني
+      timeline: Timelnie
       thank_you: Thank you
   courses:
     online_and_offline_option:
       join_course: Join <%=@course_ar_locale%>
       choose_way_to_enroll: Select the suitable type to attend <%=@course_ar_locale%> 
-      fully_booked: تم إكتمال العدد
-      inform_if_seat_available: قم بإبلاغي اذا توفر مقعد متاح
-      sucesss_will_be_informed: سيتم ارسال بريد الكرتوني لك فور توفر مكان متاح
+      fully_booked: Reached the limit
+      inform_if_seat_available: Let me know when there is an available spot.
+      sucesss_will_be_informed: Will message you if there is an available spot.
     calculate_students_final_grade:
-      grades_calculated_successfully: تم اعتماد النتيجة بنجاح
-    departments_invited_successfully: لقد تم دعوة  %{count} بنجاح, يمكنك عرض النتائج حسب ال<%= @department_ar_locale %>
-    departments_invited_unsuccessfully: تنويه، مجموع أعضاء الذين تمت دعوتهم أكبر من الحد الأقصى لل<%=@course_ar_locale%>، لن يتمكن بعض الأعضاء من الإلتحاق بهذه ال<%=@course_ar_locale%>
+      grades_calculated_successfully: The grades are calculated successfuly
+    departments_invited_successfully:  %{count} were invited successfully. Results can be displayed according to <%= @department_ar_locale %>
+    departments_invited_unsuccessfully: Warning! Invited members exceeded the allowed limit of<%=@course_ar_locale%>، Some of them will not be bale to join <%=@course_ar_locale%>
     show_attendance_certificate:
-      need_to_submit_evaluation: يجب تسليم استطلاع ال<%=@course_ar_locale%>
-      need_to_submit_survey: يجب تسليم تقييم ال<%=@course_ar_locale%>
-      download_title: تحميل ملف PDF للشهادة
-      download: تحميل الشهادة
+      need_to_submit_evaluation: Submit the <%=@course_ar_locale%>'s survey
+      need_to_submit_survey: Submit the <%=@course_ar_locale%>'s evaluation
+      download_title: Download the certificate in PDF format
+      download:  Certificate Download
       certificate_granted_to: يشهد ال<%=@organization_ar_locale%> الوطني لقياس <%= SiteConfig.site_name %> ال<%= @department_ar_locale_pluralized %> بأن
     show_accomplishment_certificate:
-      accomplishment_certificate_print: شهادة إكمال
+      accomplishment_certificate_print:  Certificate of Completion
       certificate_granted_to: يشهد ال<%=@organization_ar_locale%> الوطني لقياس <%= SiteConfig.site_name %> ال<%= @department_ar_locale_pluralized %> بأن
       certificate_granted_for: قد حضر <%=@course_ar_locale%> %{course_name} والذي عقده ال<%=@organization_ar_locale%>
       given_to: تم منح هذه الشهادة إلى
       accomplishment_successfully: قد حضر البرنامج التدريبي لمؤشرات قياس الاداء المؤسسي والذي عقده ال<%=@organization_ar_locale%>
       rwaq_wrights: هذه شهادة اكمال من <%= SiteConfig.site_name %> تصدر لكل طالب حقق شروط استيفاء الدراسة فى ال<%=@course_ar_locale%>  www.adaa.org
-      accomplishment_certificate: شـــــهادة إكمـــــال
-      download: تحميل الشهادة
-      download_title: تحميل ملف PDF للشهادة
-      need_to_submit_evaluation: يجب تسليم استطلاع ال<%=@course_ar_locale%>
-      need_to_submit_survey: يجب تسليم تقييم ال<%=@course_ar_locale%>
-      rwaq_board: تشهد منصة <%= SiteConfig.site_name %> للتعليم المفتوح أن
-      accomplished: أكمل <%=@course_ar_locale%>
-      student_earned: حصل حامل هذه الشهادة على درجة
-      taugth_by: قام بتدريس ال<%=@course_ar_locale%>
-      in_cooperation_with: "بالتعاون مع"
-      represented_by: "ويمثلها"
-      from: "بتاريخ"
-      to: "ولمدة"
-      includes: "اشتملت ال<%=@course_ar_locale%> على"
-      grade: "الدرجة"
-      rwaq_team: "عن فريق <%= SiteConfig.site_name %>"
+      accomplishment_certificate: Certificte of Completion
+      download: Download Certificate
+      download_title: Download the certificate in PDF format
+     need_to_submit_evaluation: Submit the <%=@course_ar_locale%>'s survey
+      need_to_submit_survey: Submit the <%=@course_ar_locale%>'s evaluation
+      rwaq_board: <%= SiteConfig.site_name %> awards
+      accomplished: has successfully complatet <%=@course_ar_locale%>
+      student_earned: with the grade of 
+      taugth_by: <%=@course_ar_locale%>'s Instructors
+      in_cooperation_with: "In cooperation with"
+      represented_by: "Represented by"
+      from: "Start date"
+      to: "for"
+      includes: "<%=@course_ar_locale%> includes"
+      grade: "grade"
+      rwaq_team: " <%= SiteConfig.site_name %>'s Team"
       executive_manager: "المدير التنفيذي"
       executive_manager_name: "مصعب فؤاد"
-      arabic_version: النسخة العربية
-      english_version: النسخة الانجليزية
+      arabic_version: Arabic Copy
+      english_version: English Copy
     download_accomplishment_certificate:
-      accomplishment_certificate: شهادة اجتياز
-      attendance_certificate: شهادة حضور
-      rwaq_grants_certificate: تشهد <%=SiteConfig.site_name%> أن
-      completed_course: "أكملـ/ت <%=@course_ar_locale%>"
-      attended_course: "حضر/ت <%=@course_ar_locale%>"
+      accomplishment_certificate: Certificate of Completion
+      attendance_certificate: Attendance Certificate
+      rwaq_grants_certificate:  <%=SiteConfig.site_name%> awards
+      completed_course: "completed the <%=@course_ar_locale%> "
+      attended_course: "attended the <%=@course_ar_locale%>"
       from_date: "في الفترة من "
       for_duration: الى
       obtained_degree: وقد حصل/ت حامل/ة هذه الشهادة على
