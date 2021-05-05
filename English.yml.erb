@@ -462,11 +462,11 @@ ar<%= "-#{@tenant_name}" %>:
         active_enrollment_questions_length_less_than_one: At least one question to be added
         attributes:
           end_at:
-            assignment_inclusion  : The due date of( %{assignment_name} ) is after the <%=@course_ar_locale%>' end date
-            submission_inclusion: The due date of ( %{submission_name} ) is after the <%=@course_ar_locale%>' end date
+            assignment_inclusion  : The due date of( %{assignment_name} ) is after the end date of the <%=@course_ar_locale%>
+            submission_inclusion: The due date of ( %{submission_name} ) is after the end date of the <%=@course_ar_locale%>
           start_at:
-            assignment_inclusion: The due date of ( %{assignment_name} ) is before the <%=@course_ar_locale%>' start date
-            submission_inclusion: The due date of ( %{submission_name} ) is before the <%=@course_ar_locale%>' start date
+            assignment_inclusion: The due date of ( %{assignment_name} ) is before the start date of the <%=@course_ar_locale%>
+            submission_inclusion: The due date of ( %{submission_name} ) is before the start date of the <%=@course_ar_locale%>
           continuous:
             type_cannot_be_changed_after_students_enrollment: لا يمكن تغيير نوع ال<%=@course_ar_locale%> (مستمرة / لها موعد نهاية) بعد التحاق الطلاب
           external_video_url:
@@ -486,82 +486,82 @@ ar<%= "-#{@tenant_name}" %>:
             invalid: Invalid
             expired: Expired
       question:
-        duplicate_question: Question titles have to be unique within an assignment
+        duplicate_question: Question' titles shall be unique within an assignment
         one_question: Shall include one question at least
-        due_date: يجب أن يحتوي على موعد تسليم
-        can_not_delete_date: لا يمكن حذف التاريخ لمهمة منشورة
-        can_not_add_date: لا يمكن إضافة تاريخ لمهمة منشورة
-        must_have_two: يجب أن يحتوي خيارين على الأقل
-        one_or_more: يجب أن يحتوي خيارا صحيحا واحدا أو أكثر
-        duplicate_choise: يجب ان يحتوي على اختيار غير مكرر
-        can_not_change: لا يمكن تغيير نوع السؤال حيث قام بعض الطلاب بالإجابة عليه
+        due_date: Shall have a due date
+        can_not_delete_date: Can'remove a due date for an already published assignment
+        can_not_add_date: Can't add a due date for an already published assignment
+        must_have_two: It is required to add at least two choices
+        one_or_more: It is required to check one or more choices as answers
+        duplicate_choise: Choices' title shall be unique within a question
+        can_not_change: The question is already answered by some of the students. You can't change its type
       attendance_day:
         attributes:
           day:
-            day_cannot_be_before_course_start: لا يمكن إضافة تاريخ قبل بداية ال<%=@course_ar_locale%>
-            day_cannot_be_after_course_end: لا يمكن إضافة تاريخ بعد انتهاء ال<%=@course_ar_locale%>
+            day_cannot_be_before_course_start: Date shall be before the start date of the <%=@course_ar_locale%> 
+            day_cannot_be_after_course_end: Date can't be after the end date of the <%=@course_ar_locale%>
       course_department:
         attributes:
           invited_members_limit:
-            exceed_available_limit: عدد المقاعد أكبر من المقاعد المتاحة في ال<%=@course_ar_locale%>
+            exceed_available_limit: Seats exceed the available seats in the <%=@course_ar_locale%>
       department:
         attributes:
           base:
             restrict_dependent_destroy:
-              has_many: "لا يمكنك حذف ال<%= @department_ar_locale %>، لانه يوجد به %{record}"
+              has_many: "<%= @department_ar_locale %> can be deleted, it contains %{record}"
       organization:
         attributes:
-          paid_courses_feature: خدمة ال<%= @course_ar_locale_pluralized %> غير متاحة
-          payment_options: طرق الدفع
+          paid_courses_feature:  <%= @course_ar_locale_pluralized %> service is unavailable
+          payment_options: Payment Options
           payment_options:
-            invalid_format: اعدادات الدفع غير صحيحة
-            cannot_be_all_false: يجب أن يحتوى ال<%=@organization_ar_locale%> على طريقة دفع واحدة على اﻷقل
+            invalid_format: Invalid Payment Settings
+            cannot_be_all_false: <%=@organization_ar_locale%> shall enable one payment option
       tenant:
         attributes:
           subdomain:
-            invalid: غير مقبول. يسمح فقط بالحروف الأنجليزية و الأرقام وعلامة (-) ويجب ان يبدأ بحرف وان لا ينتهى ب (-)‎
+            invalid: English letters, numbers and signs - and _ are only allowed
           schema_name:
             invalid: يجب ان يتكون الإسم من حروف انجليزية وأرقام فقط
-            reserved_schemas: هذا الإسم غير مسموح به برجاء إختيار إسم اخر
+            reserved_schemas: Reserved name, please select another one
       payment_config:
         attributes:
           base:
-            empty_config: إعدادات الدفع فارغة برجاء التواصل مع مدير الموقع
+            empty_config: Payment settings are not confogured, please contact the site administrator
       bank_info:
         attributes:
           base:
-            empty_info: معلومات البنك غير موجودة برجاء التواصل مع مدير الموقع
+            empty_info: The bank information is not configured, please contact the site administrator
       enrollment_request:
-        answer_all_active_questions: يجب الاجابة علي جميع الاسئلة
-        course_enrollment_request_disabled: يجب ان تتطلب الدورة طلبات الإلتحاق
+        answer_all_active_questions: All questions shall be answered
+        course_enrollment_request_disabled: Enrollment request is required
       enrollments:
-        enrollment_request_presence: يجب الموافقة علي طلب الإلتحاق
+        enrollment_request_presence: Enrollment request has to be approved
     general_navigation:
-      back_to: يمكنك العودة إلى
-      previous_page: الصفحة السابقة
-      navigate_to: أو الذهاب إلى
-      home_page: الصفحة الرئيسية
+      back_to: Either go back to
+      previous_page: the previous page, 
+      navigate_to: or go
+      home_page: the home page
     forbidden:
-      not_allowed: غير مسموح!
-      page_not_accessible: عفوا، لا تمتلك الصلاحية اللازمة للوصول إلى هذه الصفحة.
+      not_allowed: Forbidden!
+      page_not_accessible: Sorry! </br> You have no permission to view the page.
     internal_server_error:
-      error: خطأ تقني!
-      error_message: عفوا، لقد حدث خطأ تقني.
+      error: Internal Server Error
+      error_message: We are checking a solution for the problem.
     not_found:
-      page_not_found: الصفحة غير موجودة!
-      page_not_found_message: عفوا، الصفحة التي تحاول الوصول إليها غير موجودة.
+      page_not_found: Not Found!
+      page_not_found_message: Sorry! </br> The Content you have requested was not found.
   activemodel:
     errors:
       <<: *errors
     models:
-      message: رسالة
+      message: Message
     attributes:
       message:
-        subject: عنوان الرسالة
-        body: نص الرسالة
-        recipients: المرسل إليهم
-        sender: "من"
-        attachment: "المرفقات"
+        subject: Subject
+        body: Body
+        recipients: Recipients
+        sender: From
+        attachment: Attachments
   activerecord:
     errors:
       <<: *errors
@@ -569,7 +569,7 @@ ar<%= "-#{@tenant_name}" %>:
         fawry_payment:
           attributes:
             user_mobile:
-              invalid: الرقم الذي أدخلته غير صحيح، يجب أن يكون ١٠ أرقام بعد كود البلد <span class="ltr d-inline-block">(+20) xxx xxxxxxx</span>
+              invalid: Invalid number! Enter 10 digits after the country code <span class="ltr d-inline-block">(+20) xxx xxxxxxx</span>
     models:
       user:
         one: عضو
@@ -1217,19 +1217,19 @@ ar<%= "-#{@tenant_name}" %>:
       live_sessions: Live Sessions
     mobile:
       title: <%= SiteConfig.site_name %>
-      slogan: منصة <%= SiteConfig.site_name %> للتعليم عن بعد
-      menu: القائمة
-      welcome: مرحبا
-      sign_up: اشترك الآن
-      sign_in: دخول
+      slogan:  <%= SiteConfig.site_name %>, The e-Learning Platform
+      menu: Menu
+      welcome: Welcome
+      sign_up: Sign up
+      sign_in: Sign in
       dashboard: <%=@course_ar_locale_pluralized%>ي
-      profile: بياناتي
-      sign_out: خروج
-      copyright: © تم التطوير بواسطة ايدويڤز
-      facebook: فيس بوك
-      twitter: تويتر
-      your_role_is: أنت %{role} لهذه ال<%=@course_ar_locale%>
-      your_role_in_program: أنت مسؤول عن ادارة البرنامج
+      profile: Profile
+      sign_out: Sign out
+      copyright: Powered by ©edWaves
+      facebook: Facebook
+      twitter: Twitter
+      your_role_is: You are %{role} for the <%=@course_ar_locale%>
+      your_role_in_program: You are authorized to manage the templates
       your_role_in_org: أنت مسؤول عن إدارة ال<%=@organization_ar_locale%>
       email: "info@adaa.gov.sa"
       email_us: "بريد <%= SiteConfig.site_name %>"
@@ -1241,38 +1241,38 @@ ar<%= "-#{@tenant_name}" %>:
       signup_now: "انضم ل<%= SiteConfig.site_name %> الآن!"
       browse_courses: تصفح ال<%=@course_ar_locale_pluralized%>
       messages: "الرسائل"
-      you_did_not_activate_your_account_yet: "لم تقم بتأكيد حسابك بعد. تم ارسال رابط التأكيد الى بريدك الإلكتروني"
-      did_not_recieve_yet: "لم تستلم بريد من <%= SiteConfig.site_name %>؟"
-      resend_activation_structure: "اعادة ارسال رابط التأكيد"
-      settings: إعدادات الحساب
-      organization_settings: إعدادات ال<%=@organization_ar_locale%>
-      about: عن تطبيق <%= SiteConfig.site_name %>
+      you_did_not_activate_your_account_yet: An accout verification message has been sent to your email. Your account has not been verified yet.
+      did_not_recieve_yet: "No e-Mails received from <%= SiteConfig.site_name %>?"
+      resend_activation_structure:Resend the activation link
+      settings: Account Settings
+      organization_settings: <%=@organization_ar_locale%> Settings
+      about: About <%= SiteConfig.site_name %>
       press_to_exit: اضغط مرة أخرى للخروج من التطبيق
       no_connection: لا يوجد اتصال بالانترنت
   newsletter_subscription:
-    email_placeholder: البريد الإلكتروني
+    email_placeholder: e-Mail
     subscribe: اشترك الآن
     subscribe_title: اشترك في قائمة <%= SiteConfig.site_name %> البريدية
   devise:
     confirmations:
       new:
-        cancel: إلغاء
+        cancel: Cancel
     sessions:
       user:
-        already_signed_out: تم الخروج بالفعل!
-        signed_out: تم تسجيل الخروج بنجاح
+        already_signed_out: Already signed out!
+        signed_out: Successfully signed out
       new:
-        title: التسجيل
-        cancel: إلغاء
-        have_no_account: ليس لديك حساب؟
-        sign_up: حساب جديد
+        title: Registration
+        cancel: Cancel
+        have_no_account: Don't you have an account?
+        sign_up: New Account
       admin_user:
         signed_in: "أهلا بك"
     shared:
       links:
-        have_no_account: "ليس لديك حساب؟ "
-        sign_up: "حساب جديد"
-        have_account: لديك حساب؟
+        have_no_account: Don't you have an account?
+        sign_up: New Account
+        have_account: Already have an account?
         did_not_recieve_confirmation_insctructions?: لم تتلقى تعليمات تأكيد حسابك ؟
         resend_confirmation_insctructions: اعادة ارسال تعليمات تأكيد الحساب
     registrations:
@@ -3502,41 +3502,41 @@ ar<%= "-#{@tenant_name}" %>:
       daily_interaction: التفاعل اليومى
       recieve_answers_emails: هل ترغب في استلام إجابات الأعضاء على أسئلتك على بريدك الإلكتروني
       recieve_summery_emails: هل ترغب في استلام التفاعل اليومى للأعضاء على بريدك الإلكتروني
-      save: "حفظ التعديلات"
+      save: Save Changes
       you_do_not_have_courses: "لا يوجد لديك <%=@course_ar_locale_pluralized%> "
-      change: "تغيير"
-      password: "كلمة المرور"
-      new_password: "كلمة المرور الجديدة"
-      password_confirmation: "تأكيد كلمة المرور"
-      new_password_confirmation: "تأكيد كلمة المرور الجديدة"
-      send_instructions_of_reset_password: "ارسال التعليمات"
-      do_not_remember_password?: "لا أتذكر كلمة المرور؟"
+      change: "Change"
+      password: Password
+      new_password: New Passowrd
+      password_confirmation: Confirm new password
+      new_password_confirmation: New Password Confirmation
+      send_instructions_of_reset_password: Send Instructions
+      do_not_remember_password?: Forgot passworfd?
       resend_activation_instruction: "أعد إرسال تعليمات التأكيد"
       resend_activation_instruction_title: إرسال تعليمات التأكيد
-      login: "دخول"
-      profile: بياناتي
-      confrim_account: "تأكيد الحساب"
-      for_user: "للمستخدم"
-      choose_password: "اختار كلمة مرور:"
-      choose_password_confirmation: "تأكيد كلمة المرور:"
-      activate: "تأكيد"
-      all_people: "الجميع"
-      only_me: "أنا فقط"
-      who_can_see_my_info: "من يمكنه تصفح صفحتك الشخصية"
-      yes_i_would: نعم
-      no_i_would_not: لا
-      receive_courses_announcements: "هل ترغب في استلام التنويهات على بريدك الإلكتروني"
-      male: "ذكر"
-      female: "أنثى"
-      gender: "النوع"
-      school: "ثانوى"
-      graduate: "جامعى"
-      master: "ماجستير"
-      PHD: "دكتوراة"
-      select_your_education: اختار مستواك التعليمى
-      discussion_added: النقاشات الجديدة
-      recieve_discussion_added: هل ترغب في استلام النقاشات الجديدة على بريدك الإلكتروني
-      please_make_sure_from_reset_link: رجاء تأكد من رابط تغيير كلمة المرور الذي تم إرساله لبريدك الإلكتروني, وقم بالضغط عليه في غضون يوم واحد فقط من وصوله
+      login: "Sign in"
+      profile: PRofile
+      confrim_account: Account Verification
+      for_user: "for the user"
+      choose_password: "Choose a password:"
+      choose_password_confirmation: "Confirm password:"
+      activate: Activate
+      all_people: All
+      only_me: Only me
+      who_can_see_my_info: Who can view your profile page
+      yes_i_would: Yes
+      no_i_would_not: No
+      receive_courses_announcements: Would you like to receive notifications on you email
+      male: "Male"
+      female: "Female"
+      gender: "Gender"
+      school: Secondary School
+      graduate: Bachelor degree
+      master: Masters Degree
+      PHD: PHD
+      select_your_education: Education Level
+      discussion_added: Recent Discussions
+      recieve_discussion_added: Would you like to get notified with the new discussions?
+      please_make_sure_from_reset_link: An email has been sent with a password reset link that will expire in one day. 
       invalid_or_expired_reset_password_token: رمز إعادة تغيير كلمة المرور غير صحيح أو إنتهت صلاحيته
       if_still_not_working_please: إذا ما زلت تواجه مشكلة رجاء قم مجددا بطلب
       request_new_password_reset_link:  إعادة ضبط كلمة المرور
