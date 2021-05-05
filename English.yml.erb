@@ -1809,34 +1809,34 @@ ar<%= "-#{@tenant_name}" %>:
     new:
       add_new_member:  اضافة عضو جديد
     index:
-      members_of_the_course: فريق ال<%=@course_ar_locale%>
-      new_member: عضو جديد
-      empty: لا يوجد أعضاء بعد
-      instructors: المحاضرين
-      instructor_permission: تعرف على إختصاصات الفريق
-      instructor_permission_title: إختصاصات الفريق
-      failed_to_delete_membership: حدث خطأ ما أثناء الحذف, عاود المحاولة مرة أخرى
-      instructor_permissions_html: <ul><li>تصفح طلاب ال<%=@course_ar_locale%></li><li>إدارة المناقشات والتعليقات</li><li>إضافة وتعديل وحذف المحتويات والتنويهات</li><li>إدارة بيانات ال<%=@course_ar_locale%> والإعدادات</li><li>إضافة و حذف أعضاء ال<%=@course_ar_locale%></li></ul>
+      members_of_the_course: <%=@course_ar_locale%>'s Team
+      new_member: New Member
+      empty: No members yet
+      instructors: Instructors
+      instructor_permission: Team Authorities
+      instructor_permission_title: Team Authorities
+      failed_to_delete_membership: Something went wrong during deletion. Try again later!
+      instructor_permissions_html: <ul><li>View <%=@course_ar_locale%> enrollments </li><li>Manage discussions and comments</li><li> Manage the whole <%=@course_ar_locale%> content and notifications</li><li>Manage <%=@course_ar_locale%> settings and reports </li><li> Manage <%=@course_ar_locale%>'s team members</li></ul>
   programs:
     info:
-      publish_program: نشر البرنامج
-      unpublish_program: إلغاء نشر البرنامج
-      are_you_sure_to_publish: هل أنت واثق من نشر هذا البرنامج؟
-      are_you_sure_to_unpublish: هل أنت واثق من إلغاء نشر هذا البرنامج؟
-      published: منشور
-      not_published: غير منشور
+      publish_program: Publish Template
+      unpublish_program: Unpublish Template
+      are_you_sure_to_publish: Are you sure you want to publish this template?
+      are_you_sure_to_unpublish: Are you sure you want to unpublish this template?
+      published: Published
+      not_published: Unpublished
     publish:
-      published: تم نشر البرنامج بنجاح
+      published: Published successfully
     unpublish:
-      unpublished: تم إلغاء نشر البرنامج بنجاح
+      unpublished: Unpublished successfully
     new:
-      title: "برنامج جديد"
+      title: New Template
     form:
-      cancel: إلغاء
-      course_dates: ميعاد ال<%=@course_ar_locale%>
-      new_course_item: فقرة جديدة
-      welcome_message_hint: الرسالة الترحيبية هي رسالة سيقرأها الطالب الملتحق بال<%=@course_ar_locale%> في بريد الكتروني فور التحاقه بإسم كل اعضاء الفريق ال<%=@course_ar_locale%>
-      maximum_group_size_placeholder: يعتبر عدد المشتركين غير محدود اذا لم يتم ادخال قيمة
+      cancel: Cancel
+      course_dates: <%=@course_ar_locale%> Timing
+      new_course_item: New Section
+      welcome_message_hint: Welcome message is an e-Mail sent to the student upon a successful enrollment to the <%=@course_ar_locale%> in the name of the <%=@course_ar_locale%>'s team
+      maximum_group_size_placeholder: Seats count will be considered unlimited if left empty
       video_type: Video Source
       free_course: Free <%=@course_ar_locale%> 
       paid_course: Paid <%=@course_ar_locale%> 
@@ -1933,7 +1933,7 @@ ar<%= "-#{@tenant_name}" %>:
       grade: "grade"
       rwaq_team: " <%= SiteConfig.site_name %>'s Team"
       executive_manager: "المدير التنفيذي"
-      executive_manager_name: "مصعب فؤاد"
+      executive_manager_name: "edWaves"
       arabic_version: Arabic Copy
       english_version: English Copy
     download_accomplishment_certificate:
@@ -1942,14 +1942,14 @@ ar<%= "-#{@tenant_name}" %>:
       rwaq_grants_certificate:  <%=SiteConfig.site_name%> awards
       completed_course: "completed the <%=@course_ar_locale%> "
       attended_course: "attended the <%=@course_ar_locale%>"
-      from_date: "في الفترة من "
-      for_duration: الى
-      obtained_degree: وقد حصل/ت حامل/ة هذه الشهادة على
+      from_date: "from"
+      for_duration: to
+      obtained_degree: and the certificate holder is awarded to 
       total_hours: بمعدل جهد
-      grade: الدرجة
-      presented_by: "قام بتدريس ال<%=@course_ar_locale%>"
+      grade: Grade
+      presented_by: "<%=@course_ar_locale%>" is taught by
       best_wishes: مع تمنياتنا بالتوفيق الدائم
-      verification_link: "رابط تأكيد الشهاده"
+      verification_link: Link for certificate verification
       and_on: و على
     course_info: " فى الفترة ما بين"
     lecture_deliverable_info: "اشتملت ال<%=@course_ar_locale%> على %{lecture_deliverable_info} محاضرات."
