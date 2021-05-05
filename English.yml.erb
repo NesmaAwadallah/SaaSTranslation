@@ -425,69 +425,69 @@ ar<%= "-#{@tenant_name}" %>:
             size_too_big: A too big file size! Maximum size is 50MB.
             size_too_small: A too small file size! Minimum size is 1B.
         time_finished: The submission due date is recheached 
-        submitted_before: قام بتسليم الواجب من قبل
+        submitted_before: Already submitted
       student_submission_file:
         attributes:
           submission_file:
-            size_too_big: "حجم الملف كبير, الحد الاقصى 50 ميجا بايت"
+            size_too_big: A too big file size! Maximum size is 50MB.
       assignment:
         attributes:
           due_at:
-            inclusion: يجب أن يكون خلال فترة ال<%=@course_ar_locale%>
+            inclusion:Shall be within the <%=@course_ar_locale%>' duration
           quiz_flag:
             change_for_published: لا يمكن تغيير نوع مهمة بعد نشرها
       submission:
-        must_have_due_date: يجب أن يحتوي على موعد تسليم
-        can_not_delete_date: لا يمكن حذف التاريخ لمهمة منشورة
-        can_not_add_date: لا يمكن إضافة تاريخ لمهمة منشورة
+        must_have_due_date: Shall add a duew date
+        can_not_delete_date: Can't remove the date after being published
+        can_not_add_date: Can't add a date after being published
         attributes:
           due_at:
-            inclusion: يجب أن يكون خلال فترة ال<%=@course_ar_locale%>
+            inclusion: shall be within the <%=@course_ar_locale%>' duration
       attempt:
-        is_done: انتهى وقت المهمة
+        is_done: Due date has reached
         attributes:
           choices:
-            blank: كلها فارغة
-            taken: قام بتسليم المهمة
+            blank: Blank fields
+            taken: The assignment is lready submitted
           user_id:
-            taken: قام بتسليم المهمة
+            taken: The assignment is lready submitted
       program:
-        invalid: غير مقبول. يسمح فقط بالحروف الانجليزية و الارقام وعلامة (-) وعلامة (_)
+        invalid: "English letters, numbers and signs - and _ are only allowed"
         attributes:
           external_video_url:
-            invalid: الرابط غير صحيح
+            invalid:Invalid URL
       course:
-        empty: فارغ، يرجى ملء الحقل
-        invalid: غير مقبول. يسمح فقط بالحروف الانجليزية و الارقام وعلامة (-) وعلامة (_)
-        active_enrollment_questions_length_less_than_one: يجب ان يكون عدد الاسئلة واحد علي الاقل
+        empty: Empty field, please fill in
+        invalid: "English letters, numbers and signs - and _ are only allowed"
+        active_enrollment_questions_length_less_than_one: At least one question to be added
         attributes:
           end_at:
-            assignment_inclusion  : موعد التسليم للمهمة ( %{assignment_name} ) بعد تاريخ نهاية ال<%=@course_ar_locale%>
-            submission_inclusion: موعد التسليم للواجب ( %{submission_name} ) بعد تاريخ نهاية ال<%=@course_ar_locale%>
+            assignment_inclusion  : The due date of( %{assignment_name} ) is after the <%=@course_ar_locale%>' end date
+            submission_inclusion: The due date of ( %{submission_name} ) is after the <%=@course_ar_locale%>' end date
           start_at:
-            assignment_inclusion: موعد التسليم للمهمة ( %{assignment_name} ) يسبق تاريخ بداية ال<%=@course_ar_locale%>
-            submission_inclusion: موعد التسليم للواجب ( %{submission_name} ) يسبق تاريخ بداية ال<%=@course_ar_locale%>
+            assignment_inclusion: The due date of ( %{assignment_name} ) is before the <%=@course_ar_locale%>' start date
+            submission_inclusion: The due date of ( %{submission_name} ) is before the <%=@course_ar_locale%>' start date
           continuous:
             type_cannot_be_changed_after_students_enrollment: لا يمكن تغيير نوع ال<%=@course_ar_locale%> (مستمرة / لها موعد نهاية) بعد التحاق الطلاب
           external_video_url:
-            invalid: الرابط غير صحيح
+            invalid: Invalid URL
           paid:
             must_be_continuous: ال<%=@course_ar_locale_pluralized%> المدفوعة يجب أن تكون مستمرة
-            cannot_be_set_for_unauthorized_organization: لا يمكن انشاء <%=@course_ar_locale%> غير مجانية في هذه الجهة
-            cannot_be_updated_for_unauthorized_organization: لا يمكن تحديث سعر ال<%=@course_ar_locale%> في هذه الجهة اﻵن
+            cannot_be_set_for_unauthorized_organization: Free <%=@course_ar_locale%> can't be created at the moment
+            cannot_be_updated_for_unauthorized_organization: <%=@course_ar_locale%> can't be updated at the moment
       lecture:
-        invalid_file: الملف غير مسموح
+        invalid_file: Invalid file format
         attributes:
           external_video_url:
-            invalid: الرابط غير صحيح
+            invalid: Invalid URL
       enrollment:
         attributes:
           coupon_code:
-            invalid: غير صحيح
-            expired: منتهي الصلاحية
+            invalid: Invalid
+            expired: Expired
       question:
-        duplicate_question: لا يمكن تكرار عنوان السؤال في نفس المهمة
-        one_question: يجب أن يحتوي سؤالا على الأقل
+        duplicate_question: Question titles have to be unique within an assignment
+        one_question: Shall include one question at least
         due_date: يجب أن يحتوي على موعد تسليم
         can_not_delete_date: لا يمكن حذف التاريخ لمهمة منشورة
         can_not_add_date: لا يمكن إضافة تاريخ لمهمة منشورة
