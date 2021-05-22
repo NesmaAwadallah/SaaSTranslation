@@ -1656,16 +1656,16 @@ ar<%= "-#{@tenant_name}" %>:
       in_course: في
       final_dates: مواعيد نهائية
     show:
-      intructor_teaching_courses: أقوم بتدريس
-      user_bio: السيرة الذاتية
-      modrating_courses: أقوم بإدراة
-      taking_courses: أقوم بدراسة
-      edit_profile: تعديل البيانات
-      show_profile: عرض الملف الشخصي
-      complete_profile: أكمل بياناتك
-      user_profile: بيانات المستخدم
+      intructor_teaching_courses: I'm an instructor for
+      user_bio: Biography
+      modrating_courses: I'm a moderator for
+      taking_courses: I'm a student for
+      edit_profile: Edit profile
+      show_profile: Show profile
+      complete_profile: Complete profile
+      user_profile: User profile
       did_not: لم يقم
-      no_bio: "لا يوجد لديك سيرة ذاتية, يمكنك أضافة السيره الذاتية من هنا"
+      no_bio: "No biography has been created yet.Click here to create your biography."
       share_personal_info: بنشر اي معلومات شخصية معك
       user_private_profile: لم يقم %{user} بنشر أي معلومات شخصية معك
       user_no_courses: لا يوجد لديك <%=@course_ar_locale_pluralized%>
@@ -3483,27 +3483,27 @@ ar<%= "-#{@tenant_name}" %>:
       google_login: "تسجيل دخول بواسطة  جوجل"
       rwaq_login: "تسجيل دخول بواسطة رواق"
       menu_title: المحتويات
-      your_announcements: "التنويهات"
-      your_personal_setting: "الملف الشخصي"
-      general_settings: "إعدادات"
-      user_settings: "إعدادات الحساب"
-      profile_settings: "بيانات الحساب"
-      personal_settings: "البيانات الشخصية"
-      account_settings: "بيانات الدخول"
-      social_settings: "شبكات التواصل"
-      contact_me: "تواصل معي"
-      my_courses: "موادي"
-      messages: "الرسائل"
-      mobile_number_hint: رقم الهاتف المتاح للتواصل بالواتساب
-      personal_settings_hint: بعض المواد تتطلب اكمال هذه البيانات لتتمكن من الإنضمام
-      replies_to_comments: "الردود على تعليقاتك"
-      receive_replies_notification: "هل ترغب في استلام ردود الأعضاء على تعليقاتك على بريدك الإلكتروني"
-      answers_to_discussions: الإجابات على أسئلتك
-      daily_interaction: التفاعل اليومى
-      recieve_answers_emails: هل ترغب في استلام إجابات الأعضاء على أسئلتك على بريدك الإلكتروني
-      recieve_summery_emails: هل ترغب في استلام التفاعل اليومى للأعضاء على بريدك الإلكتروني
+      your_announcements: "Notifications"
+      your_personal_setting: "Personal Profile"
+      general_settings: "Preferences"
+      user_settings: "Account Settings"
+      profile_settings: "Account Information"
+      personal_settings: "Profile Information"
+      account_settings: "Login Information"
+      social_settings: "Social Networks"
+      contact_me: "Contact Me"
+      my_courses: "My <%=@course_ar_locale_pluralized%>"
+      messages: "Messages"
+      mobile_number_hint: It is prefered to add a mobile number that has a whatsapp
+      personal_settings_hint: Some of <%=@course_ar_locale_pluralized%> require completing these profile information to be able to enroll
+      replies_to_comments: "Replies to your comments"
+      receive_replies_notification: "Would you like to receive an e-Mail with replies to your comments?"
+      answers_to_discussions: Answers to your questions
+      daily_interaction: Dail interaction
+      recieve_answers_emails: Would you like to receive an e-Mail with replies to your questions?
+      recieve_summery_emails: Would you like to receive an e-Mail with the daily interaction for members?
       save: Save Changes
-      you_do_not_have_courses: "لا يوجد لديك <%=@course_ar_locale_pluralized%> "
+      you_do_not_have_courses: "You have no <%=@course_ar_locale_pluralized%> yet"
       change: "Change"
       password: Password
       new_password: New Passowrd
@@ -3540,12 +3540,12 @@ ar<%= "-#{@tenant_name}" %>:
       invalid_or_expired_reset_password_token: رمز إعادة تغيير كلمة المرور غير صحيح أو إنتهت صلاحيته
       if_still_not_working_please: إذا ما زلت تواجه مشكلة رجاء قم مجددا بطلب
       request_new_password_reset_link:  إعادة ضبط كلمة المرور
-      error_when_confrim: عفوا هناك خطأ ما
-      error_when_confrim_try_again_later: عفوا هناك خطأ ما في الوقت الحالي, عاود المحاولة في وقت لاحق
+      error_when_confrim: Sorry! Something went wrong
+      error_when_confrim_try_again_later: Sorry! Something went wrong, please try again later.
       confirmation_period_expired: لقد إنتهت صلاحية رابط التأكيد، يرجى إعادة طلب رابط جديد
-      personal_profile: الملف الشخصى
-      sync_profile_hint: "برجاء الضغط على أيقونة الفصول الافتراضية %{icon} لتفعيل تغيير معلومات حسابك في تطبيق الفصول الإفتراضية"
-      rwaq_login_hint: "متصل بحساب رواق"
+      personal_profile: Personal Profile
+      sync_profile_hint: "To synchronize the update profile information, please click on the virtual classes icon %{icon} up there "
+      rwaq_login_hint: "Connected to Rwaq account"
   articles:
     title: مدونة <%= SiteConfig.site_name %>
     index:
