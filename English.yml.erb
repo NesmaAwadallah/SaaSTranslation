@@ -1664,24 +1664,24 @@ ar<%= "-#{@tenant_name}" %>:
       show_profile: Show profile
       complete_profile: Complete profile
       user_profile: User profile
-      did_not: لم يقم
+      did_not: didn't
       no_bio: "No biography has been created yet.Click here to create your biography."
-      share_personal_info: بنشر اي معلومات شخصية معك
-      user_private_profile: لم يقم %{user} بنشر أي معلومات شخصية معك
-      user_no_courses: لا يوجد لديك <%=@course_ar_locale_pluralized%>
-      vistor_no_courses:  "%{user} لا يوجد لديه <%=@course_ar_locale_pluralized%>"
+      share_personal_info: Share any information with you
+      user_private_profile:  %{user} didn't share any information with you
+      user_no_courses: You have no <%=@course_ar_locale_pluralized%> yet
+      vistor_no_courses:  "%{user} has no <%=@course_ar_locale_pluralized%>"
     edit:
       edit_title: تعديل ملف المستخدم
-      title: إعدادات الحساب
-      change_password: تغيير كلمة المرور
-      update_department: تغيير ال<%= @department_ar_locale %>
-      cannot_update_department: لايمكن تغيير ال<%= @department_ar_locale %>
-      cancel: إلغاء
-      select_country: اختر البلد
-      select_department: اختر <%= @department_ar_locale %>
-      save_user: حفظ العضو
+      title: Account Settings
+      change_password: Change Password
+      update_department: Change <%= @department_ar_locale %>
+      cannot_update_department: <%= @department_ar_locale %> can't be changed
+      cancel: Cancel
+      select_country: Select country
+      select_department: Select <%= @department_ar_locale %>
+      save_user: Save
     update_password:
-      password_updated: تم تغيير كلمة المرور بنجاح
+      password_updated: The password has been changed successfully
     custom_validation_messages:
       should_be_greater_than_start_at: "يجب أن يكون بعد تاريخ بداية ال<%=@course_ar_locale%>"
       should_be_in_future_date: "يجب أن يكون بتاريخ في المستقبل"
