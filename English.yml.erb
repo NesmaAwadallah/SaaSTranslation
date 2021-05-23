@@ -885,8 +885,8 @@ ar<%= "-#{@tenant_name}" %>:
         job: Job
         user_name: Username
         image: Profile Image
-        name: Full Name
-        english_name: "الاسم باللغة الانجليزية"
+        name: Name in Arabic
+        english_name: "Name in English"
         biography: Biography
         email: e-Mail
         password: Password
@@ -1012,8 +1012,8 @@ ar<%= "-#{@tenant_name}" %>:
         body: النص
       organization:
         id: Identification number
-        name: Title
-        english_title:  'الاسم باللغة الانجليزية'
+        name: Name in Arabic
+        english_title: Name in English
         slug: The name to be used in the link
         english_name : The name to be used in the link
         email: e-Mail
@@ -1277,34 +1277,34 @@ ar<%= "-#{@tenant_name}" %>:
         resend_confirmation_insctructions: اعادة ارسال تعليمات تأكيد الحساب
     registrations:
       user:
-        social_signed_up: "مرحبا %{name}, تم التوثيق بنجاح من حساب %{provider}"
+        social_signed_up: "Welcome %{name}, %{provider} account has been authorized successfully"
       new:
-        title: التسجيل
-        sign_up: "إنشاء حساب"
-        cancel: إلغاء
-        have_account: لديك حساب؟
-        sign_in: دخول
-        english_name_hint: للاستخدام في حالة الشهادات الانجليزية
+        title: Registration
+        sign_up: "Create Account"
+        cancel: Cancel
+        have_account: Already have an account?
+        sign_in: Login
+        english_name_hint: Used for the certificate in English languange
       edit:
-        title: تغيير كلمة المرور
-        minimum_password_length: "على الأقل %{length} أحرف"
-        cancel: إلغاء
+        title: Change Password
+        minimum_password_length: "At least %{length} letter"
+        cancel: Cancel
     passwords:
       new:
-        have_no_account: ليس لديك حساب؟
-        sign_up: حساب جديد
-        cancel: إلغاء
+        have_no_account: Don't have an account?
+        sign_up: New Account
+        cancel: Cancel
       edit:
-        title: تغيير كلمة المرور
-        cancel: إلغاء
+        title: Change Password
+        cancel: Cancel
     failure:
       admin_user:
-        unauthenticated: برجاء تسجيل الدخول قبل المتابعة
-        not_found_in_database: المستخدم غير موجود
+        unauthenticated: Please register to continue
+        not_found_in_database: User is not existed
     omniauth_callbacks:
       user:
-        success: 'تم التوثيق بنجاح من حساب %{kind}.'
-        signed_in: 'تم التوثيق بنجاح من حساب %{kind}.'
+        success: 'Account %{kind} has been authorized successfully.'
+        signed_in: 'Account %{kind} has been authorized successfully.'
   pages:
     privacy_policy: Privacy Policy
     terms_conditions: Terms and Conditions
@@ -1692,19 +1692,19 @@ ar<%= "-#{@tenant_name}" %>:
       should_be_before_or_equal_any_attendance_day: توجد أيام حضور مسجلة قبل هذا التاريخ
       should_be_after_or_equal_any_attendance_day: توجد أيام حضور مسجلة بعد هذا التاريخ
     dashboard:
-      moderators: المشرفين
-      title: <%=@course_ar_locale_pluralized%>ي
-      new_course: <%=@course_ar_locale%> جديدة
-      add_course: أضف <%=@course_ar_locale%> جديدة
-      browse_courses: تصفح ال<%=@course_ar_locale_pluralized%>
-      remaining_to_course_end_date: متبقية على انتهاء ال<%=@course_ar_locale%>
-      remaining_to_course_start_date: متبقية على بداية ال<%=@course_ar_locale%>
-      manage_course: "ادارة ال<%=@course_ar_locale%>"
-      are_you_sure?:  هل انت واثق من الانسحاب من هذه ال<%=@course_ar_locale%>؟
-      unenroll: انسحب
-      my_courses: <%=@course_ar_locale_pluralized%>ي
-      my_taking_courses: <%=@course_ar_locale_pluralized%> أدرسها
-      my_moderating_courses: <%=@course_ar_locale_pluralized%> أديرها
+      moderators: Moderators
+      title: My <%=@course_ar_locale_pluralized%>
+      new_course: The <%=@course_ar_locale%> 
+      add_course: Add new <%=@course_ar_locale%> 
+      browse_courses: Browse <%=@course_ar_locale_pluralized%>
+      remaining_to_course_end_date: remaining for the <%=@course_ar_locale%> to end
+      remaining_to_course_start_date: remaining for the <%=@course_ar_locale%> to start
+      manage_course: " Manage <%=@course_ar_locale%>"
+      are_you_sure?:  Are you sure you want to withdraw from <%=@course_ar_locale%>?
+      unenroll: Withdraw
+      my_courses: My <%=@course_ar_locale_pluralized%>
+      my_taking_courses: I'm a student for <%=@course_ar_locale_pluralized%> 
+      my_moderating_courses: I'm a moderator for <%=@course_ar_locale_pluralized%> 
       dashboard: لوحة التحكم
       enrolled_users: "المشتركين:"
       enrolled_users_in_end_course: "المتصفحين:"
