@@ -843,7 +843,7 @@ ar<%= "-#{@tenant_name}" %>:
         paid: "<%=@course_ar_locale%> is Free/Paid:"
         coupon_allowed: "مسموح فقط باستخدام الكوبون"
         isSequential: The course content shall be sequentially navigated
-        is_diagram: <%=@course_ar_locale%> Sections Diagram
+        is_diagram: <%=@course_ar_locale%> 
         public: Public <%=@course_ar_locale%> 
         maximum_group_size: Online Seats Limit
         offline_maximum_group_size: On-Campus Seats Limit
@@ -1948,27 +1948,27 @@ ar<%= "-#{@tenant_name}" %>:
       total_hours: بمعدل جهد
       grade: Grade
       presented_by: "<%=@course_ar_locale%>" is taught by
-      best_wishes: مع تمنياتنا بالتوفيق الدائم
+      best_wishes: Best wishes
       verification_link: Link for certificate verification
       and_on: و على
-    course_info: " فى الفترة ما بين"
-    lecture_deliverable_info: "اشتملت ال<%=@course_ar_locale%> على %{lecture_deliverable_info} محاضرات."
-    course_deliverable_info: "اشتملت ال<%=@course_ar_locale%> على %{info}"
-    congrates: 'تهانينا!'
-    grade_message: 'لقد اجتزت هذه ال<%=@course_ar_locale%> بنجاح، وحصلت على نسبة'
-    attendance_message: 'لقد أكملت حضور هذه ال<%=@course_ar_locale%> بنسبة'
-    download_certificate: 'يمكنك الآن تحميل شهادة الإكمال الخاصة بك.‎‎'
-    download_attendance_certificate: 'يمكنك الآن تحميل شهادة الحضور الخاصة بك.‎‎'
+    course_info: " in the duration between "
+    lecture_deliverable_info: "The <%=@course_ar_locale%> has %{lecture_deliverable_info} lectures."
+    course_deliverable_info: "The <%=@course_ar_locale%> has %{info}"
+    congrates: 'Congratulations!'
+    grade_message: 'You passed the <%=@course_ar_locale%> successfully with a score: '
+    attendance_message: 'You have attended this <%=@course_ar_locale%> with a percentage: '
+    download_certificate: 'Your certificate of accomplishment is available for download.‎‎'
+    download_attendance_certificate: 'Your certificate of attendance is available for download.‎‎'
     lectures:
-      singular: 'محاضرة'
-      zero: ! '%{count} محاضرة'
+      singular: 'Lecture'
+      zero: ! '%{count} lecture'
       one: محاضرة واحدة
       two: محاضرتين
       few: ! '%{count} محاضرات '
       many: ! '%{count} محاضرة '
       other: ! '%{count} محاضرة '
     assignments:
-      singular: 'مهمة'
+      singular: 'Assignment'
       zero: ! '%{count} مهمة'
       one: مهمة واحدة
       two: مهمتين
@@ -1976,7 +1976,7 @@ ar<%= "-#{@tenant_name}" %>:
       many: ! '%{count} مهمة '
       other: ! '%{count} مهمة '
     submissions:
-      singular: 'واجب'
+      singular: 'Essay'
       zero: ! '%{count} واجب'
       one: واجب واحد
       two: واجبين
@@ -1985,18 +1985,18 @@ ar<%= "-#{@tenant_name}" %>:
       other: ! '%{count} واجب '
     you_did_not_gain_accomplishment_certificate: You didn't receive a Certificate of Completion
     you_did_not_gain_attendance_certificate: You didn't receive a Certificate of Attendance
-    weights_should_equal_100_before_ending_course: "مجموع نسب المهام يجب ان يساوى 100% قبل اعتماد النتيجة"
+    weights_should_equal_100_before_ending_course: "Total weights of assignments and essays shall be equal to 100% before approving the grades"
     status_messages:
-      reject_course_member: إلغاء الدعوة
-      join_course_member: انضم الأن
-      to_join_this_course_as_instructor: بدعوة حضراتكم للإنضمام كمحاضر لهذه ال<%=@course_ar_locale%>
-      to_join_this_course_as_moderator: بدعوة حضراتكم للإنضمام كمشرف لهذه ال<%=@course_ar_locale%>
-      have_been: قام
-      invitation_to_join_course_member: دعوة للإنضمام لفريق العمل
-      is_ready_here: الخاصة بك جاهزة.
-      in_this_course: في هذه ال<%=@course_ar_locale%>.
-      you_gained: حصلت على
-      course_ended_in: انتهت ال<%=@course_ar_locale%> في يوم
+      reject_course_member: Reject the invitation
+      join_course_member: Join Now
+      to_join_this_course_as_instructor: invited you to be an instructor for the <%=@course_ar_locale%>
+      to_join_this_course_as_moderator: invited you to be a moderator for the <%=@course_ar_locale%>
+      have_been: has
+      invitation_to_join_course_member: An invitation to join the team
+      is_ready_here: belongs to you is ready
+      in_this_course: in this <%=@course_ar_locale%>.
+      you_gained: You got
+      course_ended_in: The ل<%=@course_ar_locale%> has ended on 
       you_may_need_to_edit_settings: قبل اعتماد إنهاء ال<%=@course_ar_locale%>، ربما تحتاج لتأكيد بعض
       for_students_to_have_certificate: لكي يحصل الطلاب على شهادات الإكمال الخاصة بهم.
       certificate_will_be_sent_for_students: سيتم إرسال بريدا إلكترونيا و شهادة إكمال لجميع الطلاب الحاصلين على نسبة أعلى من
@@ -2009,10 +2009,10 @@ ar<%= "-#{@tenant_name}" %>:
       in_course_assignments_after_you_end_it: في مهام ال<%=@course_ar_locale%> بعد اعتماد إنهاء ال<%=@course_ar_locale%> .
       accomplishment_certificates: Certificate of Completion
       attendance_certificates: Certificate of Attendance
-      would_you_give_studends_certificates: هل ترغب في إرسال شهادات إكمال للطلاب؟
+      would_you_give_studends_certificates: Would you like to send your students a certificate of accomplishment?
       confirm_certificate_edit  : فضلاً قم بتأكيد اختيارك في صفحة الإعدادات.
-      the_edits: إعدادات شهادة الإكمال
-      not_now: ليس الآن
+      the_edits: Certificate of Accomplishsment Settings
+      not_now: Not Now!
       accomplishment_certificate: Certificate of Completion
       attendance_certificate: Certificate of Attendance
       certificates_sending: انتهت ال<%=@course_ar_locale%>، يتم إرسال شهادات إكمال لجميع الطلاب الحاصلين على نسبة أعلى من
@@ -2062,37 +2062,37 @@ ar<%= "-#{@tenant_name}" %>:
       no_student_attened: لم يتم إرسال شهادات حضور لأحد لإنه لا يوجد طلاب حاصلين على نسبة % %{percentage} على الأقل (نسبة الحضور)
       course_closed: انتهت ال<%=@course_ar_locale%>
     courses:
-      no_results_found: لا يوجد نتائج للبحث الذي قمت به في الوقت الحالي
+      no_results_found: No results for the search criteria you provided.
       rwaq: <%= SiteConfig.site_name %>
-      no_courses: انتظر المزيد من المواد قريبا على .. <%= SiteConfig.site_name %>
+      no_courses: More <%= SiteConfig.site_name %> will be available soon.
     course_row:
-      go_to_class: اذهب الى ال<%=@course_ar_locale%>
-      enroll_now: انضم الان
-      more: المزيد
-      instructors: المحاضرين
-      instructor: محاضر
+      go_to_class: Go to the <%=@course_ar_locale%>
+      enroll_now: Join Now
+      more: More
+      instructors: Instructors
+      instructor: Instructor
     course_item_fields:
       remove: حذف
       content_of_part: محتويات الفقرة
       title_of_part: عنوان الفقرة
       delete_part: حذف الفقرة
     course:
-      duration: المدة
-      duration_of_the_course: "مدة ال<%=@course_ar_locale%> "
-      instructors: المحاضرين
-      instructor: محاضر
+      duration: Duration
+      duration_of_the_course: "<%=@course_ar_locale%> duration"
+      instructors: Instructors
+      instructor: Instructor
       continuous_course: <%=@course_ar_locale%> مستمرة
       starting_at: "تبدأ في %{date}"
       from_to: من %{start_date} إلى %{end_date}
-      you_have_certificate: لقد حصلت على شهادة
-      details: تعرف على تفاصيل <%=@course_ar_locale%> ...
+      you_have_certificate: You got a certificate
+      details: More <%=@course_ar_locale%> details...
       maximize: تكبير
-      back: عوده
-      degree: درجة الطالب
-      due_date: تاريخ التسليم
-      ratio: المهمة/التقرير (النسبة)
-      weight: النسبة من الدرجة الكلية
-      total: الإجمالى
+      back: Back
+      degree: Students Grade
+      due_date: Due Date
+      ratio: Assignment/Essay (Percentage)
+      weight: Weight of the total grade
+      total: Total
       total_grade: درجة الطالب من الدرجة الكلية
       did_not_submit: لم يتم التسليم
       edit_seats: تعديل المقاعد
